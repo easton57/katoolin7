@@ -48,7 +48,7 @@ def main():
 					repo = input("\033[1;35mWhat do you want to do ?> \033[1;m")
 
 					if repo == "1":
-						cmd1 = os.system("apt-key adv --keyserver pool.sks-keyservers.net --recv-keys ED444FF07D8D0BF6")
+						cmd1 = os.system("apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys ED444FF07D8D0BF6")
 						cmd2 = os.system("echo '# Kali linux repositories | Added by Katoolin\ndeb https://kali.mirror.garr.it/mirrors/kali kali-rolling main non-free contrib' >> /etc/apt/sources.list")
 					elif repo == "2":
 						cmd3 = os.system("apt-get update -m")
