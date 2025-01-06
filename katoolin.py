@@ -126,6 +126,7 @@ def main():
                     )
                     if repo == "y":
                         os.system("apt install kali-menu")
+
                 elif option0 == "5":
                     print(
                         """
@@ -161,193 +162,39 @@ def main():
                         elif option1 == "gohome":
                             init1()
                         elif option1 == "0":
-                            os.system(
-                                "apt -f install amap braa casefile cisco-torch copy-router-config dmitry dnsenum \
-									dnsmap dnsrecon dnstracer dnswalk dotdotpwn enum4linux enumiax exploitdb fierce \
-									firewalk goofile lbd maltego-teeth masscan metagoofil nmap p0f parsero recon-ng \
-									set smtp-user-enum snmpcheck sslsplit sslstrip sslyze thc-ipv6 theharvester \
-									tlssled twofi urlcrazy wireshark ismtp intrace hping3 bed cisco-auditing-tool \
-									cisco-global-exploiter cisco-ocs cisco-torch copy-router-config doona dotdotpwn \
-									greenbone-security-assistant  jsql lynis nmap ohrwurm  gvmd openvas-scanner \
-									oscanner sfuzz sidguesser siparmyknife sqlmap sqlninja sqlsus thc-ipv6 tnscmd10g \
-									unix-privesc-check yersinia aircrack-ng asleap bluelog blueranger bluesnarfer \
-									bully cowpatty crackle eapmd5pass fern-wifi-cracker kalibrate-rtl  kismet mdk3 \
-									mfcuk mfoc mfterm multimon-ng pixiewps reaver redfang spooftooph wifi-honey wifite \
-									apache-users burpsuite cutycapt davtest dirb dirbuster jboss-autopwn joomscan jsql \
-									maltego-teeth padbuster paros parsero recon-ng skipfish sqlmap sqlninja sqlsus \
-									uniscan   webscarab websploit wfuzz wpscan xsser zaproxy burpsuite dnschef fiked \
-									hamster-sidejack hexinject iaxflood inviteflood ismtp mitmproxy ohrwurm protos-sip \
-									rebind responder rtpbreak rtpinsertsound rtpmixsound sctpscan siparmyknife sipp \
-									sipvicious sniffjoke sslsplit sslstrip thc-ipv6 voiphopper webscarab wifi-honey \
-									wireshark xspy yersinia zaproxy cryptcat dbd dns2tcp httptunnel nishang polenum \
-									powersploit pwnat ridenum sbd  webshells weevely casefile cutycapt dos2unix \
-									metagoofil nipper-ng pipal armitage backdoor-factory cisco-auditing-tool \
-									cisco-global-exploiter cisco-ocs cisco-torch crackle jboss-autopwn \
-									linux-exploit-suggester maltego-teeth set  sqlmap thc-ipv6 yersinia beef-xss \
-									binwalk bulk-extractor chntpw  dc3dd ddrescue dumpzilla extundelete foremost \
-									galleta guymager  p0f pdf-parser pdfid dhcpig iaxflood inviteflood ipv6-toolkit \
-									mdk3 reaver rtpflood slowhttptest t50 termineter thc-ipv6 thc-ssl-dos burpsuite \
-									cewl chntpw cisco-auditing-tool crunch gpp-decrypt hash-identifier john johnny \
-									maltego-teeth maskprocessor ncrack pack patator polenum rcracki-mt rsmangler \
-									statsprocessor thc-pptp-bruter truecrack webscarab wordlists zaproxy apktool \
-									dex2jar javasnoop jdim ollydbg smali valgrind yara android-sdk apktool dex2jar \
-									sakis3g smali && \
-									wget http://www.morningstarsecurity.com/downloads/bing-ip2hosts-0.4.tar.gz && \
-									tar -xzvf bing-ip2hosts-0.4.tar.gz && \
-									cp bing-ip2hosts-0.4/bing-ip2hosts /usr/local/bin/"
-                            )
+                            install_packages()
 
                         while option1 == "1":
+                            packages = read_packages("information_gathering.txt")
+
                             print(
                                 """
 								\033[1;35m=+[ Information Gathering\033[1;m
-								1) 					30) lbd
-								2) 					31) Maltego Teeth
-								3) Amap					32) masscan
-								4) Automater					33) Metagoofil
-								5) bing-ip2hosts				34) Miranda
-								6) braa					35) Nmap
-								7) CaseFile					36) ntop
-								8) CDPSnarf					37) p0f
-								9) cisco-torch					38) Parsero
-								10) Cookie Cadger				39) Recon-ng
-								11) copy-router-config				40) SET
-								12) DMitry					41) smtp-user-enum
-								13) 					42) snmpcheck
-								14) dnsenum					43) 
-								15) dnsmap					44) SSLsplit
-								16) DNSRecon					45) sslstrip
-								17) dnstracer					46) SSLyze
-								18) dnswalk					47) THC-IPV6
-								19) DotDotPwn					48) theHarvester
-								20) enum4linux					49) TLSSLed
-								21) enumIAX					50) twofi
-								22) exploitdb					51) URLCrazy
-								23) Fierce					52) Wireshark
-								24) Firewalk					53) WOL-E
-								25) 					54) Xplico
-								26) r					55) iSMTP
-								27) Ghost Phisher				56) InTrace
-								28) GoLismero					57) hping3
-								29) goofile
-								0) Install all Information Gathering tools\n
 								"""
                             )
+                            for i in range(0, len(packages), 2):
+                                print(
+                                    f"""
+                                    \033[1;m {i + 1}) {packages[i]}\t\t{i + 2}) {packages[i + 1]}""")
+                            print(
+                                """
+                                \033[1;m0) Install all Information Gathering tools\n
+								"""
+                            )
+
                             print(
                                 "\033[1;35mInsert the number of the tool to install it .\n\033[1;m"
                             )
                             option2 = input("\033[1;35mkat > \033[1;m")
-                            if option2 == "3":
-                                os.system("apt install amap")
-                            elif option2 == "5":
-                                os.system(
-                                    "wget http://www.morningstarsecurity.com/downloads/bing-ip2hosts-0.4.tar.gz && \
-									tar -xzvf bing-ip2hosts-0.4.tar.gz && \
-									cp bing-ip2hosts-0.4/bing-ip2hosts /usr/local/bin/"
-                                )
-                            elif option2 == "6":
-                                os.system("apt install braa")
-                            elif option2 == "7":
-                                os.system("apt install casefile")
-                            elif option2 == "9":
-                                os.system("apt install cisco-torch")
-                            elif option2 == "11":
-                                os.system("apt install copy-router-config")
-                            elif option2 == "12":
-                                os.system("apt install dmitry")
-                            elif option2 == "14":
-                                os.system("apt install dnsenum")
-                            elif option2 == "15":
-                                os.system("apt install dnsmap")
-                            elif option2 == "16":
-                                os.system("apt install dnsrecon")
-                            elif option2 == "17":
-                                os.system("apt install dnstracer")
-                            elif option2 == "18":
-                                os.system("apt install dnswalk")
-                            elif option2 == "19":
-                                os.system("apt install dotdotpwn")
-                            elif option2 == "20":
-                                os.system("apt install enum4linux")
-                            elif option2 == "21":
-                                os.system("apt install enumiax")
-                            elif option2 == "22":
-                                os.system("apt install exploitdb")
-                            elif option2 == "23":
-                                os.system("apt install fierce")
-                            elif option2 == "24":
-                                os.system("apt install firewalk")
-                            elif option2 == "26":
-                                os.system("apt install r")
-                            elif option2 == "29":
-                                os.system("apt install goofile")
-                            elif option2 == "30":
-                                os.system("apt install lbd")
-                            elif option2 == "31":
-                                os.system("apt install maltego-teeth")
-                            elif option2 == "32":
-                                os.system("apt install masscan")
-                            elif option2 == "33":
-                                os.system("apt install metagoofil")
-                            elif option2 == "35":
-                                os.system("apt install nmap")
-                            elif option2 == "36":
-                                print("ntop is unavailable")
-                            elif option2 == "37":
-                                os.system("apt install p0f")
-                            elif option2 == "38":
-                                os.system("apt install parsero")
-                            elif option2 == "39":
-                                os.system("apt install recon-ng")
-                            elif option2 == "40":
-                                os.system("apt install set")
-                            elif option2 == "41":
-                                os.system("apt install smtp-user-enum")
-                            elif option2 == "42":
-                                os.system("apt install snmpcheck")
-                            elif option2 == "44":
-                                os.system("apt install sslsplit")
-                            elif option2 == "45":
-                                os.system("apt install sslstrip")
-                            elif option2 == "46":
-                                os.system("apt install sslyze")
-                            elif option2 == "47":
-                                os.system("apt install thc-ipv6")
-                            elif option2 == "48":
-                                os.system("apt install theharvester")
-                            elif option2 == "49":
-                                os.system("apt install tlssled")
-                            elif option2 == "50":
-                                os.system("apt install twofi")
-                            elif option2 == "51":
-                                os.system("apt install urlcrazy")
-                            elif option2 == "52":
-                                os.system("apt install wireshark")
-                            elif option2 == "55":
-                                os.system("apt install ismtp")
-                            elif option2 == "56":
-                                os.system("apt install intrace")
-                            elif option2 == "57":
-                                os.system("apt install hping3")
-                            elif option2 == "back":
+
+                            if option2 == "back":
                                 init()
                             elif option2 == "gohome":
                                 init1()
                             elif option2 == "0":
-                                os.system(
-                                    "apt install -y amap braa casefile cisco-torch copy-router-config dmitry dnsenum \
-									dnsmap dnsrecon dnstracer dnswalk dotdotpwn enum4linux enumiax exploitdb fierce \
-									firewalk goofile lbd maltego-teeth masscan metagoofil nmap p0f parsero recon-ng \
-									set smtp-user-enum snmpcheck sslsplit sslstrip sslyze thc-ipv6 theharvester \
-									tlssled twofi urlcrazy wireshark ismtp intrace hping3 && \
-									wget http://www.morningstarsecurity.com/downloads/bing-ip2hosts-0.4.tar.gz && \
-									tar -xzvf bing-ip2hosts-0.4.tar.gz && \
-									cp bing-ip2hosts-0.4/bing-ip2hosts /usr/local/bin/"
-                                )
+                                install_packages(packages)
                             else:
-                                print(
-                                    "\033[1;31mSorry, that was an invalid command!\033[1;m"
-                                )
+                                install_packages(packages[int(option2) - 1])
 
                         while option1 == "2":
                             print(
@@ -1439,6 +1286,26 @@ def main():
         traceback.print_exc(file=sys.stdout)
     sys.exit(0)
 
+
+def install_packages(packages="all"):
+    # Exceptions
+    if packages in ["all", "bing-ip2hosts"] or "bing-ip2hosts" in packages:
+        os.system(
+            "wget http://www.morningstarsecurity.com/downloads/bing-ip2hosts-0.4.tar.gz && \
+            tar -xzvf bing-ip2hosts-0.4.tar.gz && \
+            cp bing-ip2hosts-0.4/bing-ip2hosts /usr/local/bin/"
+        )
+
+        packages[packages.index("bing-ip2hosts")]
+
+    # System/repo packages
+    prefix = "apt install -y"
+
+    os.system(f"{prefix} {packages}")
+
+def read_packages(file_name):
+    with open(f"package_lists/{file_name}", "r") as f:
+        return f.read().splitlines()
 
 if __name__ == "__main__":
     main()
