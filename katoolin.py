@@ -1305,7 +1305,7 @@ def install_packages(packages="all"):
     for i in packages:
         package_list += f"{i} "
 
-    os.system(f"{prefix} {packages}")
+    os.system(f"{prefix} {package_list}")
 
 def read_packages(file_name):
     with open(f"package_lists/{file_name}", "r") as f:
