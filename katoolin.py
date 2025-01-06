@@ -194,7 +194,7 @@ def main():
                             elif option2 == "0":
                                 install_packages(packages)
                             else:
-                                if int(option2) < len(packages):
+                                if int(option2) <= len(packages):
                                     install_packages(packages[int(option2) - 1])
                                 else:
                                     print("Invalid input...")
