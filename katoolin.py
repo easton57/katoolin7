@@ -1300,6 +1300,10 @@ def install_packages(packages="all"):
 
     # System/repo packages
     prefix = "apt install -y"
+    package_list = ""
+
+    for i in packages:
+        package_list += f"{i} "
 
     os.system(f"{prefix} {packages}")
 
