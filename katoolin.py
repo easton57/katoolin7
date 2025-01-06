@@ -127,7 +127,7 @@ def main():
 						elif opcion1 == "gohome":
 							inicio1()
 						elif opcion1 == "0":
-							cmd = os.system("apt-get -f install   amap  braa casefile  cisco-torch  copy-router-config dmitry  dnsenum dnsmap dnsrecon dnstracer dnswalk dotdotpwn enum4linux enumiax exploitdb fierce firewalk   goofile lbd maltego-teeth masscan metagoofil  nmap p0f parsero recon-ng set smtp-user-enum snmpcheck  sslsplit sslstrip sslyze thc-ipv6 theharvester tlssled twofi urlcrazy wireshark   ismtp intrace hping3  bed cisco-auditing-tool cisco-global-exploiter cisco-ocs cisco-torch copy-router-config doona dotdotpwn greenbone-security-assistant  jsql lynis nmap ohrwurm  gvmd openvas-scanner oscanner sfuzz sidguesser siparmyknife sqlmap sqlninja sqlsus thc-ipv6 tnscmd10g unix-privesc-check yersinia aircrack-ng asleap bluelog blueranger bluesnarfer bully cowpatty crackle eapmd5pass fern-wifi-cracker    kalibrate-rtl  kismet mdk3 mfcuk mfoc mfterm multimon-ng pixiewps reaver redfang spooftooph wifi-honey  wifite apache-users    burpsuite cutycapt davtest  dirb dirbuster    jboss-autopwn joomscan jsql maltego-teeth padbuster paros parsero   recon-ng skipfish sqlmap sqlninja sqlsus  uniscan vega w3af webscarab websploit wfuzz wpscan xsser zaproxy burpsuite dnschef fiked hamster-sidejack hexinject iaxflood inviteflood ismtp mitmproxy ohrwurm protos-sip rebind responder rtpbreak rtpinsertsound rtpmixsound sctpscan siparmyknife sipp sipvicious sniffjoke sslsplit sslstrip thc-ipv6 voiphopper webscarab wifi-honey wireshark xspy yersinia zaproxy cryptcat  dbd dns2tcp http-tunnel httptunnel  nishang polenum powersploit pwnat ridenum sbd  webshells weevely casefile cutycapt dos2unix    metagoofil nipper-ng pipal armitage backdoor-factory cisco-auditing-tool cisco-global-exploiter cisco-ocs cisco-torch crackle jboss-autopwn linux-exploit-suggester maltego-teeth set  sqlmap thc-ipv6 yersinia beef-xss binwalk bulk-extractor chntpw  dc3dd ddrescue dumpzilla extundelete foremost galleta guymager  p0f pdf-parser pdfid     dhcpig  iaxflood inviteflood ipv6-toolkit mdk3 reaver rtpflood slowhttptest t50 termineter thc-ipv6 thc-ssl-dos  burpsuite cewl chntpw cisco-auditing-tool   crunch  gpp-decrypt hash-identifier  john johnny  maltego-teeth maskprocessor  ncrack  pack patator polenum  rcracki-mt rsmangler statsprocessor thc-pptp-bruter truecrack webscarab wordlists zaproxy apktool dex2jar    javasnoop jdim ollydbg smali valgrind yara android-sdk apktool  dex2jar sakis3g smali && wget http://www.morningstarsecurity.com/downloads/bing-ip2hosts-0.4.tar.gz && tar -xzvf bing-ip2hosts-0.4.tar.gz && cp bing-ip2hosts-0.4/bing-ip2hosts /usr/local/bin/")	
+							cmd = os.system("apt-get -f install   amap  braa casefile  cisco-torch  copy-router-config dmitry  dnsenum dnsmap dnsrecon dnstracer dnswalk dotdotpwn enum4linux enumiax exploitdb fierce firewalk   goofile lbd maltego-teeth masscan metagoofil  nmap p0f parsero recon-ng set smtp-user-enum snmpcheck  sslsplit sslstrip sslyze thc-ipv6 theharvester tlssled twofi urlcrazy wireshark   ismtp intrace hping3  bed cisco-auditing-tool cisco-global-exploiter cisco-ocs cisco-torch copy-router-config doona dotdotpwn greenbone-security-assistant  jsql lynis nmap ohrwurm  gvmd openvas-scanner oscanner sfuzz sidguesser siparmyknife sqlmap sqlninja sqlsus thc-ipv6 tnscmd10g unix-privesc-check yersinia aircrack-ng asleap bluelog blueranger bluesnarfer bully cowpatty crackle eapmd5pass fern-wifi-cracker    kalibrate-rtl  kismet mdk3 mfcuk mfoc mfterm multimon-ng pixiewps reaver redfang spooftooph wifi-honey  wifite apache-users    burpsuite cutycapt davtest  dirb dirbuster    jboss-autopwn joomscan jsql maltego-teeth padbuster paros parsero   recon-ng skipfish sqlmap sqlninja sqlsus  uniscan   webscarab websploit wfuzz wpscan xsser zaproxy burpsuite dnschef fiked hamster-sidejack hexinject iaxflood inviteflood ismtp mitmproxy ohrwurm protos-sip rebind responder rtpbreak rtpinsertsound rtpmixsound sctpscan siparmyknife sipp sipvicious sniffjoke sslsplit sslstrip thc-ipv6 voiphopper webscarab wifi-honey wireshark xspy yersinia zaproxy cryptcat  dbd dns2tcp  httptunnel  nishang polenum powersploit pwnat ridenum sbd  webshells weevely casefile cutycapt dos2unix    metagoofil nipper-ng pipal armitage backdoor-factory cisco-auditing-tool cisco-global-exploiter cisco-ocs cisco-torch crackle jboss-autopwn linux-exploit-suggester maltego-teeth set  sqlmap thc-ipv6 yersinia beef-xss binwalk bulk-extractor chntpw  dc3dd ddrescue dumpzilla extundelete foremost galleta guymager  p0f pdf-parser pdfid     dhcpig  iaxflood inviteflood ipv6-toolkit mdk3 reaver rtpflood slowhttptest t50 termineter thc-ipv6 thc-ssl-dos  burpsuite cewl chntpw cisco-auditing-tool   crunch  gpp-decrypt hash-identifier  john johnny  maltego-teeth maskprocessor  ncrack  pack patator polenum  rcracki-mt rsmangler statsprocessor thc-pptp-bruter truecrack webscarab wordlists zaproxy apktool dex2jar    javasnoop jdim ollydbg smali valgrind yara android-sdk apktool  dex2jar sakis3g smali && wget http://www.morningstarsecurity.com/downloads/bing-ip2hosts-0.4.tar.gz && tar -xzvf bing-ip2hosts-0.4.tar.gz && cp bing-ip2hosts-0.4/bing-ip2hosts /usr/local/bin/")	
 						while opcion1 == "1":
 							print('''
 								\033[1;35m=+[ Information Gathering\033[1;m
@@ -471,7 +471,7 @@ def main():
 								10) DIRB				30) 
 								11) DirBuster				31) Uniscan
 								12) 				32) Vega
-								13) FunkLoad				33) w3af
+								13) FunkLoad				33) 
 								14) Grabber				34) WebScarab
 								15) jboss-autopwn			35) Webshag
 								16) joomscan				36) WebSlayer
@@ -545,9 +545,9 @@ def main():
 							elif opcion2 == "31":
 								cmd = os.system("apt-get install uniscan")
 							elif opcion2 == "32":
-								cmd = os.system("apt-get install vega")
+								cmd = os.system("apt-get install ")
 							elif opcion2 == "33":
-								cmd = os.system("apt-get install w3af")
+								cmd = os.system("apt-get install ")
 							elif opcion2 == "34":
 								cmd = os.system("apt-get install webscarab")
 							elif opcion2 == "35":
@@ -569,7 +569,7 @@ def main():
 							elif opcion2 == "gohome":
 								inicio1()	
 							elif opcion2 == "0":
-								cmd = os.system("apt-get install -y apache-users    burpsuite cutycapt davtest  dirb dirbuster    jboss-autopwn joomscan jsql maltego-teeth padbuster paros parsero   recon-ng skipfish sqlmap sqlninja sqlsus  uniscan vega w3af webscarab websploit wfuzz wpscan xsser zaproxy")												
+								cmd = os.system("apt-get install -y apache-users    burpsuite cutycapt davtest  dirb dirbuster    jboss-autopwn joomscan jsql maltego-teeth padbuster paros parsero   recon-ng skipfish sqlmap sqlninja sqlsus  uniscan   webscarab websploit wfuzz wpscan xsser zaproxy")												
 							else:
 								print("\033[1;31mSorry, that was an invalid command!\033[1;m")
 						while opcion1 == "5":
@@ -677,7 +677,7 @@ def main():
 								2) Cymothoa
 								3) dbd
 								4) dns2tcp
-								5) http-tunnel	
+								5) 	
 								6) HTTPTunnel
 								7) Intersect
 								8) Nishang
@@ -702,7 +702,7 @@ def main():
 							elif opcion2 == "4":
 								cmd = os.system("apt-get install dns2tcp")
 							elif opcion2 == "5":
-								cmd = os.system("apt-get install http-tunnel")
+								cmd = os.system("apt-get install ")
 							elif opcion2 == "6":
 								cmd = os.system("apt-get install httptunnel")
 							elif opcion2 == "7":
@@ -730,7 +730,7 @@ def main():
 							elif opcion2 == "gohome":
 								inicio1()   
 							elif opcion2 == "0":
-								cmd = os.system("apt-get install -y cryptcat  dbd dns2tcp http-tunnel httptunnel  nishang polenum powersploit pwnat ridenum sbd  webshells weevely")
+								cmd = os.system("apt-get install -y cryptcat  dbd dns2tcp  httptunnel  nishang polenum powersploit pwnat ridenum sbd  webshells weevely")
 							else:
 								print("\033[1;31mSorry, that was an invalid command!\033[1;m")
 						while opcion1 == "7":
