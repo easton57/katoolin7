@@ -1303,12 +1303,16 @@ def install_packages(packages="all"):
 
     # System/repo packages
     prefix = "apt install -y"
-    package_list = ""
 
-    for i in packages:
-        package_list += f"{i} "
+    if type(packages) is not str:
+        package_list = ""
 
-    os.system(f"{prefix} {package_list}")
+        for i in packages:
+            package_list += f"{i} "
+
+        packages = package_list
+
+    os.system(f"{prefix} {packages}")
 
 def read_packages(file_name):
     with open(f"package_lists/{file_name}", "r") as f:
