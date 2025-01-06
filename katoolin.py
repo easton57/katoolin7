@@ -127,7 +127,7 @@ def main():
 						elif opcion1 == "gohome":
 							inicio1()
 						elif opcion1 == "0":
-							cmd = os.system("apt-get -f install   amap automater braa casefile cdpsnarf cisco-torch cookie-cadger copy-router-config dmitry dnmap dnsenum dnsmap dnsrecon dnstracer dnswalk dotdotpwn enum4linux enumiax exploitdb fierce firewalk fragroute fragrouter ghost-phisher golismero goofile lbd maltego-teeth masscan metagoofil miranda nmap p0f parsero recon-ng set smtp-user-enum snmpcheck sslcaudit sslsplit sslstrip sslyze thc-ipv6 theharvester tlssled twofi urlcrazy wireshark wol-e  ismtp intrace hping3 bbqsql bed cisco-auditing-tool cisco-global-exploiter cisco-ocs cisco-torch copy-router-config doona dotdotpwn greenbone-security-assistant  jsql lynis nmap ohrwurm openvas-cli gvmd openvas-scanner oscanner sfuzz sidguesser siparmyknife sqlmap sqlninja sqlsus thc-ipv6 tnscmd10g unix-privesc-check yersinia aircrack-ng asleap bluelog blueranger bluesnarfer bully cowpatty crackle eapmd5pass fern-wifi-cracker ghost-phisher giskismet gqrx-sdr-sdr kalibrate-rtl killerbee kismet mdk3 mfcuk mfoc mfterm multimon-ng pixiewps reaver redfang spooftooph wifi-honey wifitap wifite apache-users arachni bbqsql blindelephant burpsuite cutycapt davtest deblaze dirb dirbuster fimap  grabber jboss-autopwn joomscan jsql maltego-teeth padbuster paros parsero plecost proxystrike recon-ng skipfish sqlmap sqlninja sqlsus ua-tester uniscan vega w3af webscarab websploit wfuzz wpscan xsser zaproxy burpsuite dnschef fiked hamster-sidejack hexinject iaxflood inviteflood ismtp mitmproxy ohrwurm protos-sip rebind responder rtpbreak rtpinsertsound rtpmixsound sctpscan siparmyknife sipp sipvicious sniffjoke sslsplit sslstrip thc-ipv6 voiphopper webscarab wifi-honey wireshark xspy yersinia zaproxy cryptcat cymothoa dbd dns2tcp http-tunnel httptunnel intersect nishang polenum powersploit pwnat ridenum sbd u3-pwn webshells weevely casefile cutycapt dos2unix dradis keepnote magictree metagoofil nipper-ng pipal armitage backdoor-factory cisco-auditing-tool cisco-global-exploiter cisco-ocs cisco-torch crackle jboss-autopwn linux-exploit-suggester maltego-teeth set shellnoob sqlmap thc-ipv6 yersinia beef-xss binwalk bulk-extractor chntpw cuckoo dc3dd ddrescue dumpzilla extundelete foremost galleta guymager iphone-backup-analyzer p0f pdf-parser pdfid pdgmail    dhcpig  iaxflood inviteflood ipv6-toolkit mdk3 reaver rtpflood slowhttptest t50 termineter thc-ipv6 thc-ssl-dos  burpsuite cewl chntpw cisco-auditing-tool   crunch  gpp-decrypt hash-identifier  john johnny  maltego-teeth maskprocessor  ncrack  pack patator polenum  rcracki-mt rsmangler statsprocessor thc-pptp-bruter truecrack webscarab wordlists zaproxy apktool dex2jar    javasnoop jdim ollydbg smali valgrind yara android-sdk apktool  dex2jar sakis3g smali && wget http://www.morningstarsecurity.com/downloads/bing-ip2hosts-0.4.tar.gz && tar -xzvf bing-ip2hosts-0.4.tar.gz && cp bing-ip2hosts-0.4/bing-ip2hosts /usr/local/bin/")	
+							cmd = os.system("apt-get -f install   amap  braa casefile  cisco-torch  copy-router-config dmitry  dnsenum dnsmap dnsrecon dnstracer dnswalk dotdotpwn enum4linux enumiax exploitdb fierce firewalk  r   goofile lbd maltego-teeth masscan metagoofil  nmap p0f parsero recon-ng set smtp-user-enum snmpcheck  sslsplit sslstrip sslyze thc-ipv6 theharvester tlssled twofi urlcrazy wireshark   ismtp intrace hping3  bed cisco-auditing-tool cisco-global-exploiter cisco-ocs cisco-torch copy-router-config doona dotdotpwn greenbone-security-assistant  jsql lynis nmap ohrwurm  gvmd openvas-scanner oscanner sfuzz sidguesser siparmyknife sqlmap sqlninja sqlsus thc-ipv6 tnscmd10g unix-privesc-check yersinia aircrack-ng asleap bluelog blueranger bluesnarfer bully cowpatty crackle eapmd5pass fern-wifi-cracker    kalibrate-rtl  kismet mdk3 mfcuk mfoc mfterm multimon-ng pixiewps reaver redfang spooftooph wifi-honey  wifite apache-users    burpsuite cutycapt davtest  dirb dirbuster    jboss-autopwn joomscan jsql maltego-teeth padbuster paros parsero plecost proxystrike recon-ng skipfish sqlmap sqlninja sqlsus ua-tester uniscan vega w3af webscarab websploit wfuzz wpscan xsser zaproxy burpsuite dnschef fiked hamster-sidejack hexinject iaxflood inviteflood ismtp mitmproxy ohrwurm protos-sip rebind responder rtpbreak rtpinsertsound rtpmixsound sctpscan siparmyknife sipp sipvicious sniffjoke sslsplit sslstrip thc-ipv6 voiphopper webscarab wifi-honey wireshark xspy yersinia zaproxy cryptcat cymothoa dbd dns2tcp http-tunnel httptunnel intersect nishang polenum powersploit pwnat ridenum sbd u3-pwn webshells weevely casefile cutycapt dos2unix dradis keepnote magictree metagoofil nipper-ng pipal armitage backdoor-factory cisco-auditing-tool cisco-global-exploiter cisco-ocs cisco-torch crackle jboss-autopwn linux-exploit-suggester maltego-teeth set shellnoob sqlmap thc-ipv6 yersinia beef-xss binwalk bulk-extractor chntpw cuckoo dc3dd ddrescue dumpzilla extundelete foremost galleta guymager iphone-backup-analyzer p0f pdf-parser pdfid pdgmail    dhcpig  iaxflood inviteflood ipv6-toolkit mdk3 reaver rtpflood slowhttptest t50 termineter thc-ipv6 thc-ssl-dos  burpsuite cewl chntpw cisco-auditing-tool   crunch  gpp-decrypt hash-identifier  john johnny  maltego-teeth maskprocessor  ncrack  pack patator polenum  rcracki-mt rsmangler statsprocessor thc-pptp-bruter truecrack webscarab wordlists zaproxy apktool dex2jar    javasnoop jdim ollydbg smali valgrind yara android-sdk apktool  dex2jar sakis3g smali && wget http://www.morningstarsecurity.com/downloads/bing-ip2hosts-0.4.tar.gz && tar -xzvf bing-ip2hosts-0.4.tar.gz && cp bing-ip2hosts-0.4/bing-ip2hosts /usr/local/bin/")	
 						while opcion1 == "1":
 							print('''
 								\033[1;35m=+[ Information Gathering\033[1;m
@@ -143,8 +143,8 @@ def main():
 								10) Cookie Cadger				39) Recon-ng
 								11) copy-router-config				40) SET
 								12) DMitry					41) smtp-user-enum
-								13) dnmap					42) snmpcheck
-								14) dnsenum					43) sslcaudit
+								13) 					42) snmpcheck
+								14) dnsenum					43) 
 								15) dnsmap					44) SSLsplit
 								16) DNSRecon					45) sslstrip
 								17) dnstracer					46) SSLyze
@@ -155,8 +155,8 @@ def main():
 								22) exploitdb					51) URLCrazy
 								23) Fierce					52) Wireshark
 								24) Firewalk					53) WOL-E
-								25) fragroute					54) Xplico
-								26) fragrouter					55) iSMTP
+								25) 					54) Xplico
+								26) r					55) iSMTP
 								27) Ghost Phisher				56) InTrace
 								28) GoLismero					57) hping3
 								29) goofile
@@ -201,7 +201,7 @@ def main():
 							elif opcion2 == "24":
 								cmd = os.system("apt-get install firewalk")
 							elif opcion2 == "26":
-								cmd = os.system("apt-get install fragrouter")
+								cmd = os.system("apt-get install r")
 							elif opcion2 == "29":
 								cmd = os.system("apt-get install goofile")
 							elif opcion2 == "30":
@@ -257,7 +257,7 @@ def main():
 							elif opcion2 == "gohome":
 								inicio1()		
 							elif opcion2 == "0":
-								cmd = os.system("apt-get install -y   amap automater braa casefile cdpsnarf cisco-torch cookie-cadger copy-router-config dmitry dnmap dnsenum dnsmap dnsrecon dnstracer dnswalk dotdotpwn enum4linux enumiax exploitdb fierce firewalk fragroute fragrouter ghost-phisher golismero goofile lbd maltego-teeth masscan metagoofil miranda nmap p0f parsero recon-ng set smtp-user-enum snmpcheck sslcaudit sslsplit sslstrip sslyze thc-ipv6 theharvester tlssled twofi urlcrazy wireshark wol-e  ismtp intrace hping3 && wget http://www.morningstarsecurity.com/downloads/bing-ip2hosts-0.4.tar.gz && tar -xzvf bing-ip2hosts-0.4.tar.gz && cp bing-ip2hosts-0.4/bing-ip2hosts /usr/local/bin/")				
+								cmd = os.system("apt-get install -y   amap  braa casefile  cisco-torch  copy-router-config dmitry  dnsenum dnsmap dnsrecon dnstracer dnswalk dotdotpwn enum4linux enumiax exploitdb fierce firewalk  r   goofile lbd maltego-teeth masscan metagoofil  nmap p0f parsero recon-ng set smtp-user-enum snmpcheck  sslsplit sslstrip sslyze thc-ipv6 theharvester tlssled twofi urlcrazy wireshark   ismtp intrace hping3 && wget http://www.morningstarsecurity.com/downloads/bing-ip2hosts-0.4.tar.gz && tar -xzvf bing-ip2hosts-0.4.tar.gz && cp bing-ip2hosts-0.4/bing-ip2hosts /usr/local/bin/")				
 							else:
 								print("\033[1;31mSorry, that was an invalid command!\033[1;m")
 
@@ -269,7 +269,7 @@ def main():
 								1) BBQSQL				18) Nmap
 								2) BED					19) ohrwurm
 								3) cisco-auditing-tool			20) openvas-administrator
-								4) cisco-global-exploiter		21) openvas-cli
+								4) cisco-global-exploiter		21) 
 								5) cisco-ocs				22) gvmd
 								6) cisco-torch				23) openvas-scanner
 								7) copy-router-config			24) Oscanner
@@ -325,7 +325,7 @@ def main():
 							elif opcion2 == "20":
 								cmd = os.system("apt-get install openvas-administrator")
 							elif opcion2 == "21":
-								cmd = os.system("apt-get install openvas-cli")
+								cmd = os.system("apt-get install ")
 							elif opcion2 == "22":
 								cmd = os.system("apt-get install gvmd")
 							elif opcion2 == "23":
@@ -359,7 +359,7 @@ def main():
 							elif opcion2 == "gohome":
 								inicio1()						
 							elif opcion2 == "0":
-								cmd = os.system("apt-get install -y bbqsql bed cisco-auditing-tool cisco-global-exploiter cisco-ocs cisco-torch copy-router-config doona dotdotpwn greenbone-security-assistant  jsql lynis nmap ohrwurm openvas-cli gvmd openvas-scanner oscanner  sfuzz sidguesser siparmyknife sqlmap sqlninja sqlsus thc-ipv6 tnscmd10g unix-privesc-check yersinia")						
+								cmd = os.system("apt-get install -y  bed cisco-auditing-tool cisco-global-exploiter cisco-ocs cisco-torch copy-router-config doona dotdotpwn greenbone-security-assistant  jsql lynis nmap ohrwurm  gvmd openvas-scanner oscanner  sfuzz sidguesser siparmyknife sqlmap sqlninja sqlsus thc-ipv6 tnscmd10g unix-privesc-check yersinia")						
 							else:
 								print("\033[1;31mSorry, that was an invalid command!\033[1;m")
 
@@ -411,15 +411,15 @@ def main():
 							elif opcion2 == "12":
 								cmd = os.system("apt-get install fern-wifi-cracker")
 							elif opcion2 == "13":
-								cmd = os.system("apt-get install ghost-phisher")
+								cmd = os.system("apt-get install ")
 							elif opcion2 == "14":
-								cmd = os.system("apt-get install giskismet")
+								cmd = os.system("apt-get install ")
 							elif opcion2 == "16":
 								cmd = os.system("apt-get install git && git clone git://git.kali.org/packages/gr-scan.git")
 							elif opcion2 == "17":
 								cmd = os.system("apt-get install kalibrate-rtl")
 							elif opcion2 == "18":
-								cmd = os.system("apt-get install killerbee")
+								cmd = os.system("apt-get install ")
 							elif opcion2 == "19":
 								cmd = os.system("apt-get install kismet")
 							elif opcion2 == "20":
@@ -445,11 +445,11 @@ def main():
 							elif opcion2 == "30":
 								cmd = os.system("apt-get install wifi-honey")
 							elif opcion2 == "31":
-								cmd = os.system("apt-get install wifitap")
+								cmd = os.system("apt-get install ")
 							elif opcion2 == "32":
 								cmd = os.system("apt-get install wifite")
 							elif opcion2 == "0":
-								cmd = os.system("apt-get install -y aircrack-ng asleap bluelog blueranger bluesnarfer bully cowpatty crackle eapmd5pass fern-wifi-cracker ghost-phisher giskismet gqrx-sdr-sdr kalibrate-rtl killerbee kismet mdk3 mfcuk mfoc mfterm multimon-ng pixiewps reaver redfang spooftooph wifi-honey wifitap wifite")
+								cmd = os.system("apt-get install -y aircrack-ng asleap bluelog blueranger bluesnarfer bully cowpatty crackle eapmd5pass fern-wifi-cracker    kalibrate-rtl  kismet mdk3 mfcuk mfoc mfterm multimon-ng pixiewps reaver redfang spooftooph wifi-honey  wifite")
 							elif opcion2 == "back":
 								inicio()
 							elif opcion2 == "gohome":
@@ -467,10 +467,10 @@ def main():
 								6) commix				26) Skipfish
 								7) CutyCapt				27) sqlmap
 								8) DAVTest				28) Sqlninja
-								9) deblaze				29) sqlsus
+								9) 				29) sqlsus
 								10) DIRB				30) ua-tester
 								11) DirBuster				31) Uniscan
-								12) fimap				32) Vega
+								12) 				32) Vega
 								13) FunkLoad				33) w3af
 								14) Grabber				34) WebScarab
 								15) jboss-autopwn			35) Webshag
@@ -489,9 +489,9 @@ def main():
 							if opcion2 == "1":
 								cmd = os.system("apt-get install apache-users")
 							elif opcion2 == "2":
-								cmd = os.system("apt-get install arachni")
+								cmd = os.system("apt-get install ")
 							elif opcion2 == "3":
-								cmd = os.system("apt-get install bbqsql")
+								cmd = os.system("apt-get install ")
 							elif opcion2 == "5":
 								cmd = os.system("apt-get install burpsuite")
 							elif opcion2 == "6":
@@ -501,17 +501,17 @@ def main():
 							elif opcion2 == "8":
 								cmd = os.system("apt-get install davtest")
 							elif opcion2 == "9":
-								cmd = os.system("apt-get install deblaze")
+								cmd = os.system("apt-get install ")
 							elif opcion2 == "10":
 								cmd = os.system("apt-get install dirb")
 							elif opcion2 == "11":
 								cmd = os.system("apt-get install dirbuster")
 							elif opcion2 == "12":
-								cmd = os.system("apt-get install fimap")
+								cmd = os.system("apt-get install ")
 							elif opcion2 == "13":
 								cmd = os.system("apt-get install ")
 							elif opcion2 == "14":
-								cmd = os.system("apt-get install grabber")
+								cmd = os.system("apt-get install ")
 							elif opcion2 == "15":
 								cmd = os.system("apt-get install jboss-autopwn")
 							elif opcion2 == "16":
@@ -569,7 +569,7 @@ def main():
 							elif opcion2 == "gohome":
 								inicio1()	
 							elif opcion2 == "0":
-								cmd = os.system("apt-get install -y apache-users arachni bbqsql blindelephant burpsuite cutycapt davtest deblaze dirb dirbuster fimap  grabber jboss-autopwn joomscan jsql maltego-teeth padbuster paros parsero plecost proxystrike recon-ng skipfish sqlmap sqlninja sqlsus ua-tester uniscan vega w3af webscarab websploit wfuzz wpscan xsser zaproxy")												
+								cmd = os.system("apt-get install -y apache-users    burpsuite cutycapt davtest  dirb dirbuster    jboss-autopwn joomscan jsql maltego-teeth padbuster paros parsero plecost proxystrike recon-ng skipfish sqlmap sqlninja sqlsus ua-tester uniscan vega w3af webscarab websploit wfuzz wpscan xsser zaproxy")												
 							else:
 								print("\033[1;31mSorry, that was an invalid command!\033[1;m")
 						while opcion1 == "5":
