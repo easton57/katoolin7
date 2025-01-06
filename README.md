@@ -1,7 +1,7 @@
 
 [![python](https://img.shields.io/badge/Program-Python-brightgreen.svg)](https://www.python.org/downloads/release/python/)
 [![OS](https://img.shields.io/badge/Tested%20On-Linux-yellowgreen.svg)](https://en.wikipedia.org/wiki/Linux)
-# Katoolin7 (WIP Still Not Ready)
+# Katoolin7 (Functioning, likely missing packages)
 
 ![Screenshot at 2021-03-17 11-15-09](https://user-images.githubusercontent.com/69615463/111419571-e91c3380-8713-11eb-8041-4db26709c13d.png)
 
