@@ -196,6 +196,9 @@ def main():
                             else:
                                 install_packages(packages[int(option2) - 1])
 
+                            # Wait for a second goodness
+                            input("Review installation above then press enter...")
+
                         while option1 == "2":
                             print(
                                 """
