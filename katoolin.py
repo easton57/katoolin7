@@ -140,16 +140,16 @@ def main():
                     while option0 == "2":
                         print(
                             """
-							\033[1;35m**************************** All Categories *****************************\033[1;m
-							1) Information Gathering			8) Exploitation Tools
-							2) Vulnerability Analysis			9) Forensics Tools
-							3) Wireless Attacks				10) Stress Testing
-							4) Web Applications				11) Password Attacks
-							5) Sniffing & Spoofing				12) Reverse Engineering
-							6) Maintaining Access				13) Hardware Hacking
-							7) Reporting Tools 				14) Extra
-																
-							0) All
+                    \033[1;35m**************************** All Categories *****************************\033[1;m
+                    1) Information Gathering			8) Exploitation Tools
+                    2) Vulnerability Analysis			9) Forensics Tools
+                    3) Wireless Attacks				10) Stress Testing
+                    4) Web Applications				11) Password Attacks
+                    5) Sniffing & Spoofing				12) Reverse Engineering
+                    6) Maintaining Access				13) Hardware Hacking
+                    7) Reporting Tools 				14) Extra
+
+                    0) All
 							"""
                         )
                         print(
@@ -168,19 +168,12 @@ def main():
                             packages = read_packages("information_gathering.txt")
 
                             print(
-                                """
-								\033[1;35m=+[ Information Gathering\033[1;m
-								"""
-                            )
+                            """
+                    \033[1;35m=+[ Information Gathering\033[1;m
+                            """)
                             for i in range(0, len(packages), 2):
-                                print(
-                                    f"""
-                                    \033[1;m {i + 1}) {packages[i]}\t\t{i + 2}) {packages[i + 1]}""")
-                            print(
-                                """
-                                \033[1;m0) Install all Information Gathering tools\n
-								"""
-                            )
+                                print(f"\t\t    {i + 1}) {packages[i]}\t\t\t\t\t{i + 2}) {packages[i + 1]}")
+                            print("\t\t    0) Install all Information Gathering tools\n")
 
                             print(
                                 "\033[1;35mInsert the number of the tool to install it .\n\033[1;m"
