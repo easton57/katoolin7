@@ -25,7 +25,7 @@ def main():
 			\033[1;37m+ -- -- +=[ 331 Tools \033[1;m\n
 			''')
 
-		def inicio1():
+		def init1():
 			while True:
 				print('''
 					1) Add Kali repositories & Update 
@@ -69,9 +69,9 @@ def main():
 						fout.close()
 						print("\033[1;31m\nAll kali linux repositories have been deleted !\n\033[1;m")
 					elif repo == "back":
-						inicio1()
+						init1()
 					elif repo == "gohome":
-						inicio1()
+						init1()
 					elif repo == "4":
 						file = open('/etc/apt/sources.list', 'r')
 
@@ -105,7 +105,7 @@ def main():
 						''')
 
 
-				def inicio():
+				def init():
 					while option0 == "2":
 						print('''
 							\033[1;35m**************************** All Categories *****************************\033[1;m
@@ -123,9 +123,9 @@ def main():
 
 						option1 = input("\033[1;35mkat > \033[1;m")
 						if option1 == "back":
-							inicio1()
+							init1()
 						elif option1 == "gohome":
-							inicio1()
+							init1()
 						elif option1 == "0":
 							cmd = os.system("apt -f install   amap  braa casefile  cisco-torch  copy-router-config dmitry  dnsenum dnsmap dnsrecon dnstracer dnswalk dotdotpwn enum4linux enumiax exploitdb fierce firewalk   goofile lbd maltego-teeth masscan metagoofil  nmap p0f parsero recon-ng set smtp-user-enum snmpcheck  sslsplit sslstrip sslyze thc-ipv6 theharvester tlssled twofi urlcrazy wireshark   ismtp intrace hping3  bed cisco-auditing-tool cisco-global-exploiter cisco-ocs cisco-torch copy-router-config doona dotdotpwn greenbone-security-assistant  jsql lynis nmap ohrwurm  gvmd openvas-scanner oscanner sfuzz sidguesser siparmyknife sqlmap sqlninja sqlsus thc-ipv6 tnscmd10g unix-privesc-check yersinia aircrack-ng asleap bluelog blueranger bluesnarfer bully cowpatty crackle eapmd5pass fern-wifi-cracker    kalibrate-rtl  kismet mdk3 mfcuk mfoc mfterm multimon-ng pixiewps reaver redfang spooftooph wifi-honey  wifite apache-users    burpsuite cutycapt davtest  dirb dirbuster    jboss-autopwn joomscan jsql maltego-teeth padbuster paros parsero   recon-ng skipfish sqlmap sqlninja sqlsus  uniscan   webscarab websploit wfuzz wpscan xsser zaproxy burpsuite dnschef fiked hamster-sidejack hexinject iaxflood inviteflood ismtp mitmproxy ohrwurm protos-sip rebind responder rtpbreak rtpinsertsound rtpmixsound sctpscan siparmyknife sipp sipvicious sniffjoke sslsplit sslstrip thc-ipv6 voiphopper webscarab wifi-honey wireshark xspy yersinia zaproxy cryptcat  dbd dns2tcp  httptunnel  nishang polenum powersploit pwnat ridenum sbd  webshells weevely casefile cutycapt dos2unix    metagoofil nipper-ng pipal armitage backdoor-factory cisco-auditing-tool cisco-global-exploiter cisco-ocs cisco-torch crackle jboss-autopwn linux-exploit-suggester maltego-teeth set  sqlmap thc-ipv6 yersinia beef-xss binwalk bulk-extractor chntpw  dc3dd ddrescue dumpzilla extundelete foremost galleta guymager  p0f pdf-parser pdfid     dhcpig  iaxflood inviteflood ipv6-toolkit mdk3 reaver rtpflood slowhttptest t50 termineter thc-ipv6 thc-ssl-dos  burpsuite cewl chntpw cisco-auditing-tool   crunch  gpp-decrypt hash-identifier  john johnny  maltego-teeth maskprocessor  ncrack  pack patator polenum  rcracki-mt rsmangler statsprocessor thc-pptp-bruter truecrack webscarab wordlists zaproxy apktool dex2jar    javasnoop jdim ollydbg smali valgrind yara android-sdk apktool  dex2jar sakis3g smali && wget http://www.morningstarsecurity.com/downloads/bing-ip2hosts-0.4.tar.gz && tar -xzvf bing-ip2hosts-0.4.tar.gz && cp bing-ip2hosts-0.4/bing-ip2hosts /usr/local/bin/")	
 						while option1 == "1":
@@ -253,9 +253,9 @@ def main():
 							elif option2 == "57":
 								cmd = os.system("apt install hping3")
 							elif option2 == "back":
-								inicio()
+								init()
 							elif option2 == "gohome":
-								inicio1()		
+								init1()		
 							elif option2 == "0":
 								cmd = os.system("apt install -y   amap  braa casefile  cisco-torch  copy-router-config dmitry  dnsenum dnsmap dnsrecon dnstracer dnswalk dotdotpwn enum4linux enumiax exploitdb fierce firewalk   goofile lbd maltego-teeth masscan metagoofil  nmap p0f parsero recon-ng set smtp-user-enum snmpcheck  sslsplit sslstrip sslyze thc-ipv6 theharvester tlssled twofi urlcrazy wireshark   ismtp intrace hping3 && wget http://www.morningstarsecurity.com/downloads/bing-ip2hosts-0.4.tar.gz && tar -xzvf bing-ip2hosts-0.4.tar.gz && cp bing-ip2hosts-0.4/bing-ip2hosts /usr/local/bin/")				
 							else:
@@ -355,9 +355,9 @@ def main():
 							elif option2 == "35":
 								cmd = os.system("apt install yersinia")
 							elif option2 == "back":
-								inicio()
+								init()
 							elif option2 == "gohome":
-								inicio1()						
+								init1()						
 							elif option2 == "0":
 								cmd = os.system("apt install -y  bed cisco-auditing-tool cisco-global-exploiter cisco-ocs cisco-torch copy-router-config doona dotdotpwn greenbone-security-assistant  jsql lynis nmap ohrwurm  gvmd openvas-scanner oscanner  sfuzz sidguesser siparmyknife sqlmap sqlninja sqlsus thc-ipv6 tnscmd10g unix-privesc-check yersinia")						
 							else:
@@ -451,9 +451,9 @@ def main():
 							elif option2 == "0":
 								cmd = os.system("apt install -y aircrack-ng asleap bluelog blueranger bluesnarfer bully cowpatty crackle eapmd5pass fern-wifi-cracker    kalibrate-rtl  kismet mdk3 mfcuk mfoc mfterm multimon-ng pixiewps reaver redfang spooftooph wifi-honey  wifite")
 							elif option2 == "back":
-								inicio()
+								init()
 							elif option2 == "gohome":
-								inicio1()						
+								init1()						
 							else:
 								print("\033[1;31mSorry, that was an invalid command!\033[1;m")
 						while option1 == "4":
@@ -565,9 +565,9 @@ def main():
 							elif option2 == "41":
 								cmd = os.system("apt install zaproxy")										
 							elif option2 == "back":
-								inicio()
+								init()
 							elif option2 == "gohome":
-								inicio1()	
+								init1()	
 							elif option2 == "0":
 								cmd = os.system("apt install -y apache-users    burpsuite cutycapt davtest  dirb dirbuster    jboss-autopwn joomscan jsql maltego-teeth padbuster paros parsero   recon-ng skipfish sqlmap sqlninja sqlsus  uniscan   webscarab websploit wfuzz wpscan xsser zaproxy")												
 							else:
@@ -660,9 +660,9 @@ def main():
 							elif option2 == "32":
 								cmd = os.system("apt install zaproxy")
 							elif option2 == "back":
-								inicio()
+								init()
 							elif option2 == "gohome":
-								inicio1()
+								init1()
 
 
 							elif option2 == "0":
@@ -726,9 +726,9 @@ def main():
 							elif option2 == "16":
 								cmd = os.system("apt install weevely")
 							elif option2 == "back":
-								inicio()
+								init()
 							elif option2 == "gohome":
-								inicio1()   
+								init1()   
 							elif option2 == "0":
 								cmd = os.system("apt install -y cryptcat  dbd dns2tcp  httptunnel  nishang polenum powersploit pwnat ridenum sbd  webshells weevely")
 							else:
@@ -768,9 +768,9 @@ def main():
 							elif option2 == "9":
 								cmd = os.system("apt install pipal")
 							elif option2 == "back":
-								inicio()
+								init()
 							elif option2 == "gohome":
-								inicio1()   
+								init1()   
 							elif option2 == "0":
 								cmd = os.system("apt install -y casefile cutycapt dos2unix    metagoofil nipper-ng pipal")  
 							else:
@@ -835,9 +835,9 @@ def main():
 							elif option2 == "17":
 								cmd = os.system("apt install yersinia")
 							elif option2 == "back":
-								inicio()
+								init()
 							elif option2 == "gohome":
-								inicio1()   
+								init1()   
 							elif option2 == "0":
 								cmd = os.system("apt install -y armitage backdoor-factory cisco-auditing-tool cisco-global-exploiter cisco-ocs cisco-torch crackle jboss-autopwn linux-exploit-suggester maltego-teeth set  sqlmap thc-ipv6 yersinia beef-xss")  						
 							else:
@@ -910,9 +910,9 @@ def main():
 							elif option2 == "23":
 								cmd = os.system("apt install ")
 							elif option2 == "back":
-								inicio()
+								init()
 							elif option2 == "gohome":
-								inicio1()   
+								init1()   
 							elif option2 == "0":
 								cmd = os.system("apt install -y binwalk bulk-extractor chntpw  dc3dd ddrescue dumpzilla extundelete foremost galleta guymager  p0f pdf-parser pdfid    ")						
 							else:
@@ -967,9 +967,9 @@ def main():
 							elif option2 == "14":
 								cmd = os.system("apt install thc-ssl-dos ")    				             										
 							elif option2 == "back":
-								inicio()
+								init()
 							elif option2 == "gohome":
-								inicio1()   
+								init1()   
 							elif option2 == "0":
 								cmd = os.system("apt install -y dhcpig  iaxflood inviteflood ipv6-toolkit mdk3 reaver rtpflood slowhttptest t50 termineter thc-ipv6 thc-ssl-dos")
 							else:
@@ -1070,9 +1070,9 @@ def main():
 							elif option2 == "36":
 								cmd = os.system("apt install zaproxy")
 							elif option2 == "back":
-								inicio()
+								init()
 							elif option2 == "gohome":
-								inicio1()   
+								init1()   
 							elif option2 == "0":
 								cmd = os.system("apt install -y  burpsuite cewl chntpw cisco-auditing-tool   crunch  gpp-decrypt hash-identifier  john johnny  maltego-teeth maskprocessor  ncrack  pack patator polenum  rcracki-mt rsmangler statsprocessor thc-pptp-bruter truecrack webscarab wordlists zaproxy")
 							else:
@@ -1118,9 +1118,9 @@ def main():
 							elif option2 == "11":
 								cmd = os.system("apt install YARA")
 							elif option2 == "back":
-								inicio()
+								init()
 							elif option2 == "gohome":
-								inicio1()   
+								init1()   
 							elif option2 == "0":
 								cmd = os.system("apt install -y apktool dex2jar python-diStorm3   javasnoop jdim OllyDbg smali Valgrind YARA")
 							else:
@@ -1152,9 +1152,9 @@ def main():
 								cmd = os.system("apt install smali")
 
 							elif option2 == "back":
-								inicio()
+								init()
 							elif option2 == "gohome":
-								inicio1()   
+								init1()   
 							elif option2 == "0":
 								cmd = os.system("apt install -y android-sdk apktool  dex2jar sakis3g smali")
 							else:
@@ -1174,11 +1174,11 @@ def main():
 								cmd = os.system("apt install squid3")
 								print(" ")
 							elif option2 == "back":
-								inicio()
+								init()
 							elif option2 == "gohome":
-								inicio1()
-				inicio()
-		inicio1()
+								init1()
+				init()
+		init1()
 	except KeyboardInterrupt:
 		print("Shutdown requested...Goodbye...")
 	except Exception:
