@@ -48,10 +48,10 @@ def main():
 					repo = input("\033[1;35mWhat do you want to do ?> \033[1;m")
 
 					if repo == "1":
-						cmd1 = os.system("apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys ED444FF07D8D0BF6")
-						cmd2 = os.system("echo '# Kali linux repositories | Added by Katoolin\ndeb https://kali.mirror.garr.it/mirrors/kali kali-rolling main non-free contrib' >> /etc/apt/sources.list")
+						os.system("apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys ED444FF07D8D0BF6")
+						os.system("echo '# Kali linux repositories | Added by Katoolin\ndeb https://kali.mirror.garr.it/mirrors/kali kali-rolling main non-free contrib' >> /etc/apt/sources.list")
 					elif repo == "2":
-						cmd3 = os.system("apt update -m")
+						os.system("apt update -m")
 					elif repo == "3":
 						infile = "/etc/apt/sources.list"
 						outfile = "/etc/apt/sources.list"
@@ -90,13 +90,13 @@ def main():
 						''')
 					repo = input("\033[1;35mDo you want to install classicmenu indicator ? [y/n]> \033[1;m")
 					if repo == "y":
-						cmd1 = os.system("add-apt-repository ppa:diesch/testing && apt update")
-						cmd = os.system("sudo apt install classicmenu-indicator")
+						os.system("add-apt-repository ppa:diesch/testing && apt update")
+						os.system("sudo apt install classicmenu-indicator")
 
 				elif option0 == "4"	:
 					repo = input("\033[1;35mDo you want to install Kali menu ? [y/n]> \033[1;m")
 					if repo == "y":
-						cmd1 = os.system("apt install kali-menu")
+						os.system("apt install kali-menu")
 				elif option0 == "5":
 					print(''' 
 						****************** +Commands+ ******************
@@ -127,7 +127,7 @@ def main():
 						elif option1 == "gohome":
 							init1()
 						elif option1 == "0":
-							cmd = os.system("apt -f install   amap  braa casefile  cisco-torch  copy-router-config dmitry  dnsenum dnsmap dnsrecon dnstracer dnswalk dotdotpwn enum4linux enumiax exploitdb fierce firewalk   goofile lbd maltego-teeth masscan metagoofil  nmap p0f parsero recon-ng set smtp-user-enum snmpcheck  sslsplit sslstrip sslyze thc-ipv6 theharvester tlssled twofi urlcrazy wireshark   ismtp intrace hping3  bed cisco-auditing-tool cisco-global-exploiter cisco-ocs cisco-torch copy-router-config doona dotdotpwn greenbone-security-assistant  jsql lynis nmap ohrwurm  gvmd openvas-scanner oscanner sfuzz sidguesser siparmyknife sqlmap sqlninja sqlsus thc-ipv6 tnscmd10g unix-privesc-check yersinia aircrack-ng asleap bluelog blueranger bluesnarfer bully cowpatty crackle eapmd5pass fern-wifi-cracker    kalibrate-rtl  kismet mdk3 mfcuk mfoc mfterm multimon-ng pixiewps reaver redfang spooftooph wifi-honey  wifite apache-users    burpsuite cutycapt davtest  dirb dirbuster    jboss-autopwn joomscan jsql maltego-teeth padbuster paros parsero   recon-ng skipfish sqlmap sqlninja sqlsus  uniscan   webscarab websploit wfuzz wpscan xsser zaproxy burpsuite dnschef fiked hamster-sidejack hexinject iaxflood inviteflood ismtp mitmproxy ohrwurm protos-sip rebind responder rtpbreak rtpinsertsound rtpmixsound sctpscan siparmyknife sipp sipvicious sniffjoke sslsplit sslstrip thc-ipv6 voiphopper webscarab wifi-honey wireshark xspy yersinia zaproxy cryptcat  dbd dns2tcp  httptunnel  nishang polenum powersploit pwnat ridenum sbd  webshells weevely casefile cutycapt dos2unix    metagoofil nipper-ng pipal armitage backdoor-factory cisco-auditing-tool cisco-global-exploiter cisco-ocs cisco-torch crackle jboss-autopwn linux-exploit-suggester maltego-teeth set  sqlmap thc-ipv6 yersinia beef-xss binwalk bulk-extractor chntpw  dc3dd ddrescue dumpzilla extundelete foremost galleta guymager  p0f pdf-parser pdfid     dhcpig  iaxflood inviteflood ipv6-toolkit mdk3 reaver rtpflood slowhttptest t50 termineter thc-ipv6 thc-ssl-dos  burpsuite cewl chntpw cisco-auditing-tool   crunch  gpp-decrypt hash-identifier  john johnny  maltego-teeth maskprocessor  ncrack  pack patator polenum  rcracki-mt rsmangler statsprocessor thc-pptp-bruter truecrack webscarab wordlists zaproxy apktool dex2jar    javasnoop jdim ollydbg smali valgrind yara android-sdk apktool  dex2jar sakis3g smali && wget http://www.morningstarsecurity.com/downloads/bing-ip2hosts-0.4.tar.gz && tar -xzvf bing-ip2hosts-0.4.tar.gz && cp bing-ip2hosts-0.4/bing-ip2hosts /usr/local/bin/")	
+							os.system("apt -f install   amap  braa casefile  cisco-torch  copy-router-config dmitry  dnsenum dnsmap dnsrecon dnstracer dnswalk dotdotpwn enum4linux enumiax exploitdb fierce firewalk   goofile lbd maltego-teeth masscan metagoofil  nmap p0f parsero recon-ng set smtp-user-enum snmpcheck  sslsplit sslstrip sslyze thc-ipv6 theharvester tlssled twofi urlcrazy wireshark   ismtp intrace hping3  bed cisco-auditing-tool cisco-global-exploiter cisco-ocs cisco-torch copy-router-config doona dotdotpwn greenbone-security-assistant  jsql lynis nmap ohrwurm  gvmd openvas-scanner oscanner sfuzz sidguesser siparmyknife sqlmap sqlninja sqlsus thc-ipv6 tnscmd10g unix-privesc-check yersinia aircrack-ng asleap bluelog blueranger bluesnarfer bully cowpatty crackle eapmd5pass fern-wifi-cracker    kalibrate-rtl  kismet mdk3 mfcuk mfoc mfterm multimon-ng pixiewps reaver redfang spooftooph wifi-honey  wifite apache-users    burpsuite cutycapt davtest  dirb dirbuster    jboss-autopwn joomscan jsql maltego-teeth padbuster paros parsero   recon-ng skipfish sqlmap sqlninja sqlsus  uniscan   webscarab websploit wfuzz wpscan xsser zaproxy burpsuite dnschef fiked hamster-sidejack hexinject iaxflood inviteflood ismtp mitmproxy ohrwurm protos-sip rebind responder rtpbreak rtpinsertsound rtpmixsound sctpscan siparmyknife sipp sipvicious sniffjoke sslsplit sslstrip thc-ipv6 voiphopper webscarab wifi-honey wireshark xspy yersinia zaproxy cryptcat  dbd dns2tcp  httptunnel  nishang polenum powersploit pwnat ridenum sbd  webshells weevely casefile cutycapt dos2unix    metagoofil nipper-ng pipal armitage backdoor-factory cisco-auditing-tool cisco-global-exploiter cisco-ocs cisco-torch crackle jboss-autopwn linux-exploit-suggester maltego-teeth set  sqlmap thc-ipv6 yersinia beef-xss binwalk bulk-extractor chntpw  dc3dd ddrescue dumpzilla extundelete foremost galleta guymager  p0f pdf-parser pdfid     dhcpig  iaxflood inviteflood ipv6-toolkit mdk3 reaver rtpflood slowhttptest t50 termineter thc-ipv6 thc-ssl-dos  burpsuite cewl chntpw cisco-auditing-tool   crunch  gpp-decrypt hash-identifier  john johnny  maltego-teeth maskprocessor  ncrack  pack patator polenum  rcracki-mt rsmangler statsprocessor thc-pptp-bruter truecrack webscarab wordlists zaproxy apktool dex2jar    javasnoop jdim ollydbg smali valgrind yara android-sdk apktool  dex2jar sakis3g smali && wget http://www.morningstarsecurity.com/downloads/bing-ip2hosts-0.4.tar.gz && tar -xzvf bing-ip2hosts-0.4.tar.gz && cp bing-ip2hosts-0.4/bing-ip2hosts /usr/local/bin/")	
 						while option1 == "1":
 							print('''
 								\033[1;35m=+[ Information Gathering\033[1;m
@@ -165,99 +165,99 @@ def main():
 							print("\033[1;35mInsert the number of the tool to install it .\n\033[1;m")
 							option2 = input("\033[1;35mkat > \033[1;m")
 							if option2 == "3":
-								cmd = os.system("apt install amap")
+								os.system("apt install amap")
 							elif option2 == "5":
-								cmd = os.system("wget http://www.morningstarsecurity.com/downloads/bing-ip2hosts-0.4.tar.gz && tar -xzvf bing-ip2hosts-0.4.tar.gz && cp bing-ip2hosts-0.4/bing-ip2hosts /usr/local/bin/")
+								os.system("wget http://www.morningstarsecurity.com/downloads/bing-ip2hosts-0.4.tar.gz && tar -xzvf bing-ip2hosts-0.4.tar.gz && cp bing-ip2hosts-0.4/bing-ip2hosts /usr/local/bin/")
 							elif option2 == "6":
-								cmd = os.system("apt install braa")
+								os.system("apt install braa")
 							elif option2 == "7":
-								cmd = os.system("apt install casefile")
+								os.system("apt install casefile")
 							elif option2 == "9":
-								cmd = os.system("apt install cisco-torch")
+								os.system("apt install cisco-torch")
 							elif option2 == "11":
-								cmd = os.system("apt install copy-router-config")
+								os.system("apt install copy-router-config")
 							elif option2 == "12":
-								cmd = os.system("apt install dmitry")
+								os.system("apt install dmitry")
 							elif option2 == "14":
-								cmd = os.system("apt install dnsenum")
+								os.system("apt install dnsenum")
 							elif option2 == "15":
-								cmd = os.system("apt install dnsmap")
+								os.system("apt install dnsmap")
 							elif option2 == "16":
-								cmd = os.system("apt install dnsrecon")
+								os.system("apt install dnsrecon")
 							elif option2 == "17":
-								cmd = os.system("apt install dnstracer")
+								os.system("apt install dnstracer")
 							elif option2 == "18":
-								cmd = os.system("apt install dnswalk")
+								os.system("apt install dnswalk")
 							elif option2 == "19":
-								cmd = os.system("apt install dotdotpwn")
+								os.system("apt install dotdotpwn")
 							elif option2 == "20":
-								cmd = os.system("apt install enum4linux")
+								os.system("apt install enum4linux")
 							elif option2 == "21":
-								cmd = os.system("apt install enumiax")
+								os.system("apt install enumiax")
 							elif option2 == "22":
-								cmd = os.system("apt install exploitdb")
+								os.system("apt install exploitdb")
 							elif option2 == "23":
-								cmd = os.system("apt install fierce")
+								os.system("apt install fierce")
 							elif option2 == "24":
-								cmd = os.system("apt install firewalk")
+								os.system("apt install firewalk")
 							elif option2 == "26":
-								cmd = os.system("apt install r")
+								os.system("apt install r")
 							elif option2 == "29":
-								cmd = os.system("apt install goofile")
+								os.system("apt install goofile")
 							elif option2 == "30":
-								cmd = os.system("apt install lbd")
+								os.system("apt install lbd")
 							elif option2 == "31":
-								cmd = os.system("apt install maltego-teeth")
+								os.system("apt install maltego-teeth")
 							elif option2 == "32":
-								cmd = os.system("apt install masscan")
+								os.system("apt install masscan")
 							elif option2 == "33":
-								cmd = os.system("apt install metagoofil")
+								os.system("apt install metagoofil")
 							elif option2 == "35":
-								cmd = os.system("apt install nmap")
+								os.system("apt install nmap")
 							elif option2 == "36":
 								print('ntop is unavailable')
 							elif option2 == "37":
-								cmd = os.system("apt install p0f")
+								os.system("apt install p0f")
 							elif option2 == "38":
-								cmd = os.system("apt install parsero")
+								os.system("apt install parsero")
 							elif option2 == "39":
-								cmd = os.system("apt install recon-ng")
+								os.system("apt install recon-ng")
 							elif option2 == "40":
-								cmd = os.system("apt install set")
+								os.system("apt install set")
 							elif option2 == "41":
-								cmd = os.system("apt install smtp-user-enum")
+								os.system("apt install smtp-user-enum")
 							elif option2 == "42":
-								cmd = os.system("apt install snmpcheck")
+								os.system("apt install snmpcheck")
 							elif option2 == "44":
-								cmd = os.system("apt install sslsplit")
+								os.system("apt install sslsplit")
 							elif option2 == "45":
-								cmd = os.system("apt install sslstrip")
+								os.system("apt install sslstrip")
 							elif option2 == "46":
-								cmd = os.system("apt install sslyze")
+								os.system("apt install sslyze")
 							elif option2 == "47":
-								cmd = os.system("apt install thc-ipv6")
+								os.system("apt install thc-ipv6")
 							elif option2 == "48":
-								cmd = os.system("apt install theharvester")
+								os.system("apt install theharvester")
 							elif option2 == "49":
-								cmd = os.system("apt install tlssled")
+								os.system("apt install tlssled")
 							elif option2 == "50":
-								cmd = os.system("apt install twofi")
+								os.system("apt install twofi")
 							elif option2 == "51":
-								cmd = os.system("apt install urlcrazy")
+								os.system("apt install urlcrazy")
 							elif option2 == "52":
-								cmd = os.system("apt install wireshark")
+								os.system("apt install wireshark")
 							elif option2 == "55":
-								cmd = os.system("apt install ismtp")
+								os.system("apt install ismtp")
 							elif option2 == "56":
-								cmd = os.system("apt install intrace")
+								os.system("apt install intrace")
 							elif option2 == "57":
-								cmd = os.system("apt install hping3")
+								os.system("apt install hping3")
 							elif option2 == "back":
 								init()
 							elif option2 == "gohome":
 								init1()		
 							elif option2 == "0":
-								cmd = os.system("apt install -y   amap  braa casefile  cisco-torch  copy-router-config dmitry  dnsenum dnsmap dnsrecon dnstracer dnswalk dotdotpwn enum4linux enumiax exploitdb fierce firewalk   goofile lbd maltego-teeth masscan metagoofil  nmap p0f parsero recon-ng set smtp-user-enum snmpcheck  sslsplit sslstrip sslyze thc-ipv6 theharvester tlssled twofi urlcrazy wireshark   ismtp intrace hping3 && wget http://www.morningstarsecurity.com/downloads/bing-ip2hosts-0.4.tar.gz && tar -xzvf bing-ip2hosts-0.4.tar.gz && cp bing-ip2hosts-0.4/bing-ip2hosts /usr/local/bin/")				
+								os.system("apt install -y   amap  braa casefile  cisco-torch  copy-router-config dmitry  dnsenum dnsmap dnsrecon dnstracer dnswalk dotdotpwn enum4linux enumiax exploitdb fierce firewalk   goofile lbd maltego-teeth masscan metagoofil  nmap p0f parsero recon-ng set smtp-user-enum snmpcheck  sslsplit sslstrip sslyze thc-ipv6 theharvester tlssled twofi urlcrazy wireshark   ismtp intrace hping3 && wget http://www.morningstarsecurity.com/downloads/bing-ip2hosts-0.4.tar.gz && tar -xzvf bing-ip2hosts-0.4.tar.gz && cp bing-ip2hosts-0.4/bing-ip2hosts /usr/local/bin/")				
 							else:
 								print("\033[1;31mSorry, that was an invalid command!\033[1;m")
 
@@ -289,77 +289,77 @@ def main():
 							print("\033[1;35mInsert the number of the tool to install it .\n\033[1;m")
 							option2 = input("\033[1;35mkat > \033[1;m")
 							if option2 == "2":
-								cmd = os.system("apt install bed")
+								os.system("apt install bed")
 							elif option2 == "3":
-								cmd = os.system("apt install cisco-auditing-tool")
+								os.system("apt install cisco-auditing-tool")
 							elif option2 == "4":
-								cmd = os.system("apt install cisco-global-exploiter")
+								os.system("apt install cisco-global-exploiter")
 							elif option2 == "5":
-								cmd = os.system("apt install cisco-ocs")
+								os.system("apt install cisco-ocs")
 							elif option2 == "6":
-								cmd = os.system("apt install cisco-torch")
+								os.system("apt install cisco-torch")
 							elif option2 == "7":
-								cmd = os.system("apt install copy-router-config")
+								os.system("apt install copy-router-config")
 							elif option2 == "8":
-								cmd = os.system("apt install git && git clone https://github.com/stasinopoulos/commix.git commix && cd commix && python ./commix.py --install")
+								os.system("apt install git && git clone https://github.com/stasinopoulos/commix.git commix && cd commix && python ./commix.py --install")
 							elif option2 == "9":
-								cmd = os.system("echo 'download page : http://www.cqure.net/wp/tools/database/dbpwaudit/'")
+								os.system("echo 'download page : http://www.cqure.net/wp/tools/database/dbpwaudit/'")
 							elif option2 == "10":
-								cmd = os.system("apt install doona")
+								os.system("apt install doona")
 							elif option2 == "11":
-								cmd = os.system("apt install dotdotpwn")
+								os.system("apt install dotdotpwn")
 							elif option2 == "12":
-								cmd = os.system("apt install greenbone-security-assistant")
+								os.system("apt install greenbone-security-assistant")
 							elif option2 == "13":
-								cmd = os.system("apt install git && git clone git://git.kali.org/packages/gsd.git")
+								os.system("apt install git && git clone git://git.kali.org/packages/gsd.git")
 							elif option2 == "15":
 								print("Please download inguma from : http://inguma.sourceforge.net")
 							elif option2 == "16":
-								cmd = os.system("apt install jsql")
+								os.system("apt install jsql")
 							elif option2 == "17":
-								cmd = os.system("apt install lynis")
+								os.system("apt install lynis")
 							elif option2 == "18":
-								cmd = os.system("apt install nmap")
+								os.system("apt install nmap")
 							elif option2 == "19":
-								cmd = os.system("apt install ohrwurm")
+								os.system("apt install ohrwurm")
 							elif option2 == "20":
-								cmd = os.system("apt install openvas-administrator")
+								os.system("apt install openvas-administrator")
 							elif option2 == "21":
-								cmd = os.system("apt install ")
+								os.system("apt install ")
 							elif option2 == "22":
-								cmd = os.system("apt install gvmd")
+								os.system("apt install gvmd")
 							elif option2 == "23":
-								cmd = os.system("apt install openvas-scanner")
+								os.system("apt install openvas-scanner")
 							elif option2 == "24":
-								cmd = os.system("apt install oscanner")
+								os.system("apt install oscanner")
 							elif option2 == "25":
-								cmd = os.system("apt install ")
+								os.system("apt install ")
 							elif option2 == "26":
-								cmd = os.system("apt install sfuzz")
+								os.system("apt install sfuzz")
 							elif option2 == "27":
-								cmd = os.system("apt install sidguesser")
+								os.system("apt install sidguesser")
 							elif option2 == "28":
-								cmd = os.system("apt install siparmyknife")
+								os.system("apt install siparmyknife")
 							elif option2 == "29":
-								cmd = os.system("apt install sqlmap")
+								os.system("apt install sqlmap")
 							elif option2 == "30":
-								cmd = os.system("apt install sqlninja")
+								os.system("apt install sqlninja")
 							elif option2 == "31":
-								cmd = os.system("apt install sqlsus")
+								os.system("apt install sqlsus")
 							elif option2 == "32":
-								cmd = os.system("apt install thc-ipv6")
+								os.system("apt install thc-ipv6")
 							elif option2 == "33":
-								cmd = os.system("apt install tnscmd10g")
+								os.system("apt install tnscmd10g")
 							elif option2 == "34":
-								cmd = os.system("apt install unix-privesc-check")
+								os.system("apt install unix-privesc-check")
 							elif option2 == "35":
-								cmd = os.system("apt install yersinia")
+								os.system("apt install yersinia")
 							elif option2 == "back":
 								init()
 							elif option2 == "gohome":
 								init1()						
 							elif option2 == "0":
-								cmd = os.system("apt install -y  bed cisco-auditing-tool cisco-global-exploiter cisco-ocs cisco-torch copy-router-config doona dotdotpwn greenbone-security-assistant  jsql lynis nmap ohrwurm  gvmd openvas-scanner oscanner  sfuzz sidguesser siparmyknife sqlmap sqlninja sqlsus thc-ipv6 tnscmd10g unix-privesc-check yersinia")						
+								os.system("apt install -y  bed cisco-auditing-tool cisco-global-exploiter cisco-ocs cisco-torch copy-router-config doona dotdotpwn greenbone-security-assistant  jsql lynis nmap ohrwurm  gvmd openvas-scanner oscanner  sfuzz sidguesser siparmyknife sqlmap sqlninja sqlsus thc-ipv6 tnscmd10g unix-privesc-check yersinia")						
 							else:
 								print("\033[1;31mSorry, that was an invalid command!\033[1;m")
 
@@ -387,69 +387,69 @@ def main():
 							print("\033[1;35mInsert the number of the tool to install it .\n\033[1;m")
 							option2 = input("\033[1;35mkat > \033[1;m")
 							if option2 == "1":
-								cmd = os.system("apt install aircrack-ng")
+								os.system("apt install aircrack-ng")
 							elif option2 == "2":
-								cmd = os.system("apt install asleap")
+								os.system("apt install asleap")
 							elif option2 == "3":
-								cmd = os.system("apt install bluelog")
+								os.system("apt install bluelog")
 							elif option2 == "4":
-								cmd = os.system("apt install git && git clone git://git.kali.org/packages/bluemaho.git")
+								os.system("apt install git && git clone git://git.kali.org/packages/bluemaho.git")
 							elif option2 == "5":
-								cmd = os.system("apt install git && git clone git://git.kali.org/packages/bluepot.git")
+								os.system("apt install git && git clone git://git.kali.org/packages/bluepot.git")
 							elif option2 == "6":
-								cmd = os.system("apt install blueranger")
+								os.system("apt install blueranger")
 							elif option2 == "7":
-								cmd = os.system("apt install bluesnarfer")
+								os.system("apt install bluesnarfer")
 							elif option2 == "8":
-								cmd = os.system("apt install bully")
+								os.system("apt install bully")
 							elif option2 == "9":
-								cmd = os.system("apt install cowpatty")
+								os.system("apt install cowpatty")
 							elif option2 == "10":
-								cmd = os.system("apt install crackle")
+								os.system("apt install crackle")
 							elif option2 == "11":
-								cmd = os.system("apt install eapmd5pass")
+								os.system("apt install eapmd5pass")
 							elif option2 == "12":
-								cmd = os.system("apt install fern-wifi-cracker")
+								os.system("apt install fern-wifi-cracker")
 							elif option2 == "13":
-								cmd = os.system("apt install ")
+								os.system("apt install ")
 							elif option2 == "14":
-								cmd = os.system("apt install ")
+								os.system("apt install ")
 							elif option2 == "16":
-								cmd = os.system("apt install git && git clone git://git.kali.org/packages/gr-scan.git")
+								os.system("apt install git && git clone git://git.kali.org/packages/gr-scan.git")
 							elif option2 == "17":
-								cmd = os.system("apt install kalibrate-rtl")
+								os.system("apt install kalibrate-rtl")
 							elif option2 == "18":
-								cmd = os.system("apt install ")
+								os.system("apt install ")
 							elif option2 == "19":
-								cmd = os.system("apt install kismet")
+								os.system("apt install kismet")
 							elif option2 == "20":
-								cmd = os.system("apt install mdk3")
+								os.system("apt install mdk3")
 							elif option2 == "21":
-								cmd = os.system("apt install mfcuk")
+								os.system("apt install mfcuk")
 							elif option2 == "22":
-								cmd = os.system("apt install mfoc")
+								os.system("apt install mfoc")
 							elif option2 == "23":
-								cmd = os.system("apt install mfterm")
+								os.system("apt install mfterm")
 							elif option2 == "24":
-								cmd = os.system("apt install multimon-ng")
+								os.system("apt install multimon-ng")
 							elif option2 == "25":
-								cmd = os.system("apt install pixiewps")
+								os.system("apt install pixiewps")
 							elif option2 == "26":
-								cmd = os.system("apt install reaver")
+								os.system("apt install reaver")
 							elif option2 == "27":
-								cmd = os.system("apt install redfang")
+								os.system("apt install redfang")
 							elif option2 == "28":
-								cmd = os.system("apt install rtlsdr-scanner")
+								os.system("apt install rtlsdr-scanner")
 							elif option2 == "29":
-								cmd = os.system("apt install spooftooph")
+								os.system("apt install spooftooph")
 							elif option2 == "30":
-								cmd = os.system("apt install wifi-honey")
+								os.system("apt install wifi-honey")
 							elif option2 == "31":
-								cmd = os.system("apt install ")
+								os.system("apt install ")
 							elif option2 == "32":
-								cmd = os.system("apt install wifite")
+								os.system("apt install wifite")
 							elif option2 == "0":
-								cmd = os.system("apt install -y aircrack-ng asleap bluelog blueranger bluesnarfer bully cowpatty crackle eapmd5pass fern-wifi-cracker    kalibrate-rtl  kismet mdk3 mfcuk mfoc mfterm multimon-ng pixiewps reaver redfang spooftooph wifi-honey  wifite")
+								os.system("apt install -y aircrack-ng asleap bluelog blueranger bluesnarfer bully cowpatty crackle eapmd5pass fern-wifi-cracker    kalibrate-rtl  kismet mdk3 mfcuk mfoc mfterm multimon-ng pixiewps reaver redfang spooftooph wifi-honey  wifite")
 							elif option2 == "back":
 								init()
 							elif option2 == "gohome":
@@ -487,89 +487,89 @@ def main():
 							
 							option2 = input("\033[1;35mkat > \033[1;m")
 							if option2 == "1":
-								cmd = os.system("apt install apache-users")
+								os.system("apt install apache-users")
 							elif option2 == "2":
-								cmd = os.system("apt install ")
+								os.system("apt install ")
 							elif option2 == "3":
-								cmd = os.system("apt install ")
+								os.system("apt install ")
 							elif option2 == "5":
-								cmd = os.system("apt install burpsuite")
+								os.system("apt install burpsuite")
 							elif option2 == "6":
-								cmd = os.system("apt install cutycapt")
+								os.system("apt install cutycapt")
 							elif option2 == "7":
-								cmd = os.system("apt install git && git clone https://github.com/stasinopoulos/commix.git commix && cd commix && python ./commix.py --install")
+								os.system("apt install git && git clone https://github.com/stasinopoulos/commix.git commix && cd commix && python ./commix.py --install")
 							elif option2 == "8":
-								cmd = os.system("apt install davtest")
+								os.system("apt install davtest")
 							elif option2 == "9":
-								cmd = os.system("apt install ")
+								os.system("apt install ")
 							elif option2 == "10":
-								cmd = os.system("apt install dirb")
+								os.system("apt install dirb")
 							elif option2 == "11":
-								cmd = os.system("apt install dirbuster")
+								os.system("apt install dirbuster")
 							elif option2 == "12":
-								cmd = os.system("apt install ")
+								os.system("apt install ")
 							elif option2 == "13":
-								cmd = os.system("apt install ")
+								os.system("apt install ")
 							elif option2 == "14":
-								cmd = os.system("apt install ")
+								os.system("apt install ")
 							elif option2 == "15":
-								cmd = os.system("apt install jboss-autopwn")
+								os.system("apt install jboss-autopwn")
 							elif option2 == "16":
-								cmd = os.system("apt install joomscan")
+								os.system("apt install joomscan")
 							elif option2 == "17":
-								cmd = os.system("apt install jsql")
+								os.system("apt install jsql")
 							elif option2 == "18":
-								cmd = os.system("apt install maltego-teeth")
+								os.system("apt install maltego-teeth")
 							elif option2 == "19":
-								cmd = os.system("apt install padbuster")
+								os.system("apt install padbuster")
 							elif option2 == "20":
-								cmd = os.system("apt install paros")
+								os.system("apt install paros")
 							elif option2 == "21":
-								cmd = os.system("apt install parsero")
+								os.system("apt install parsero")
 							elif option2 == "22":
-								cmd = os.system("apt install ")
+								os.system("apt install ")
 							elif option2 == "24":
-								cmd = os.system("apt install ")
+								os.system("apt install ")
 							elif option2 == "25":
-								cmd = os.system("apt install recon-ng")
+								os.system("apt install recon-ng")
 							elif option2 == "26":
-								cmd = os.system("apt install skipfish")
+								os.system("apt install skipfish")
 							elif option2 == "27":
-								cmd = os.system("apt install sqlmap")
+								os.system("apt install sqlmap")
 							elif option2 == "28":
-								cmd = os.system("apt install sqlninja")
+								os.system("apt install sqlninja")
 							elif option2 == "29":
-								cmd = os.system("apt install sqlsus")
+								os.system("apt install sqlsus")
 							elif option2 == "30":
-								cmd = os.system("apt install ")
+								os.system("apt install ")
 							elif option2 == "31":
-								cmd = os.system("apt install uniscan")
+								os.system("apt install uniscan")
 							elif option2 == "32":
-								cmd = os.system("apt install ")
+								os.system("apt install ")
 							elif option2 == "33":
-								cmd = os.system("apt install ")
+								os.system("apt install ")
 							elif option2 == "34":
-								cmd = os.system("apt install webscarab")
+								os.system("apt install webscarab")
 							elif option2 == "35":
 								print("Webshag is unavailable")
 							elif option2 == "36":
-								cmd = os.system("apt install git && git clone git://git.kali.org/packages/webslayer.git")
+								os.system("apt install git && git clone git://git.kali.org/packages/webslayer.git")
 							elif option2 == "37":
-								cmd = os.system("apt install websploit")
+								os.system("apt install websploit")
 							elif option2 == "38":
-								cmd = os.system("apt install wfuzz")
+								os.system("apt install wfuzz")
 							elif option2 == "39":
-								cmd = os.system("apt install wpscan")
+								os.system("apt install wpscan")
 							elif option2 == "40":
-								cmd = os.system("apt install xsser")
+								os.system("apt install xsser")
 							elif option2 == "41":
-								cmd = os.system("apt install zaproxy")										
+								os.system("apt install zaproxy")										
 							elif option2 == "back":
 								init()
 							elif option2 == "gohome":
 								init1()	
 							elif option2 == "0":
-								cmd = os.system("apt install -y apache-users    burpsuite cutycapt davtest  dirb dirbuster    jboss-autopwn joomscan jsql maltego-teeth padbuster paros parsero   recon-ng skipfish sqlmap sqlninja sqlsus  uniscan   webscarab websploit wfuzz wpscan xsser zaproxy")												
+								os.system("apt install -y apache-users    burpsuite cutycapt davtest  dirb dirbuster    jboss-autopwn joomscan jsql maltego-teeth padbuster paros parsero   recon-ng skipfish sqlmap sqlninja sqlsus  uniscan   webscarab websploit wfuzz wpscan xsser zaproxy")												
 							else:
 								print("\033[1;31mSorry, that was an invalid command!\033[1;m")
 						while option1 == "5":
@@ -596,69 +596,69 @@ def main():
 							print("\033[1;35mInsert the number of the tool to install it .\n\033[1;m")
 							option2 = input("\033[1;35mkat > \033[1;m")
 							if option2 == "1":
-								cmd = os.system("apt install burpsuite")
+								os.system("apt install burpsuite")
 							elif option2 == "2":
-								cmd = os.system("apt install dnschef")
+								os.system("apt install dnschef")
 							elif option2 == "3":
-								cmd = os.system("apt install fiked")
+								os.system("apt install fiked")
 							elif option2 == "4":
-								cmd = os.system("apt install hamster-sidejack")
+								os.system("apt install hamster-sidejack")
 							elif option2 == "5":
-								cmd = os.system("apt install hexinject")
+								os.system("apt install hexinject")
 							elif option2 == "6":
-								cmd = os.system("apt install iaxflood")
+								os.system("apt install iaxflood")
 							elif option2 == "7":
-								cmd = os.system("apt install inviteflood")
+								os.system("apt install inviteflood")
 							elif option2 == "8":
-								cmd = os.system("apt install ismtp")
+								os.system("apt install ismtp")
 							elif option2 == "9":
-								cmd = os.system("apt install git && git clone git://git.kali.org/packages/isr-evilgrade.git")
+								os.system("apt install git && git clone git://git.kali.org/packages/isr-evilgrade.git")
 							elif option2 == "10":
-								cmd = os.system("apt install mitmproxy")
+								os.system("apt install mitmproxy")
 							elif option2 == "11":
-								cmd = os.system("apt install ohrwurm")
+								os.system("apt install ohrwurm")
 							elif option2 == "12":
-								cmd = os.system("apt install protos-sip")
+								os.system("apt install protos-sip")
 							elif option2 == "13":
-								cmd = os.system("apt install rebind")
+								os.system("apt install rebind")
 							elif option2 == "14":
-								cmd = os.system("apt install responder")
+								os.system("apt install responder")
 							elif option2 == "15":
-								cmd = os.system("apt install rtpbreak")
+								os.system("apt install rtpbreak")
 							elif option2 == "16":
-								cmd = os.system("apt install rtpinsertsound")
+								os.system("apt install rtpinsertsound")
 							elif option2 == "17":
-								cmd = os.system("apt install rtpmixsound")
+								os.system("apt install rtpmixsound")
 							elif option2 == "18":
-								cmd = os.system("apt install sctpscan")
+								os.system("apt install sctpscan")
 							elif option2 == "19":
-								cmd = os.system("apt install siparmyknife")
+								os.system("apt install siparmyknife")
 							elif option2 == "20":
-								cmd = os.system("apt install sipp")
+								os.system("apt install sipp")
 							elif option2 == "21":
-								cmd = os.system("apt install sipvicious")
+								os.system("apt install sipvicious")
 							elif option2 == "22":
-								cmd = os.system("apt install sniffjoke")
+								os.system("apt install sniffjoke")
 							elif option2 == "23":
-								cmd = os.system("apt install sslsplit")
+								os.system("apt install sslsplit")
 							elif option2 == "24":
-								cmd = os.system("apt install sslstrip")
+								os.system("apt install sslstrip")
 							elif option2 == "25":
-								cmd = os.system("apt install thc-ipv6")
+								os.system("apt install thc-ipv6")
 							elif option2 == "26":
-								cmd = os.system("apt install voiphopper")
+								os.system("apt install voiphopper")
 							elif option2 == "27":
-								cmd = os.system("apt install webscarab")
+								os.system("apt install webscarab")
 							elif option2 == "28":
-								cmd = os.system("apt install wifi-honey")
+								os.system("apt install wifi-honey")
 							elif option2 == "29":
-								cmd = os.system("apt install wireshark")
+								os.system("apt install wireshark")
 							elif option2 == "30":
-								cmd = os.system("apt install xspy")
+								os.system("apt install xspy")
 							elif option2 == "31":
-								cmd = os.system("apt install yersinia")
+								os.system("apt install yersinia")
 							elif option2 == "32":
-								cmd = os.system("apt install zaproxy")
+								os.system("apt install zaproxy")
 							elif option2 == "back":
 								init()
 							elif option2 == "gohome":
@@ -666,7 +666,7 @@ def main():
 
 
 							elif option2 == "0":
-								cmd = os.system("apt install -y burpsuite dnschef fiked hamster-sidejack hexinject iaxflood inviteflood ismtp mitmproxy ohrwurm protos-sip rebind responder rtpbreak rtpinsertsound rtpmixsound sctpscan siparmyknife sipp sipvicious sniffjoke sslsplit sslstrip thc-ipv6 voiphopper webscarab wifi-honey wireshark xspy yersinia zaproxy")  
+								os.system("apt install -y burpsuite dnschef fiked hamster-sidejack hexinject iaxflood inviteflood ismtp mitmproxy ohrwurm protos-sip rebind responder rtpbreak rtpinsertsound rtpmixsound sctpscan siparmyknife sipp sipvicious sniffjoke sslsplit sslstrip thc-ipv6 voiphopper webscarab wifi-honey wireshark xspy yersinia zaproxy")  
 							else:
 								print("\033[1;31mSorry, that was an invalid command!\033[1;m")
 
@@ -694,43 +694,43 @@ def main():
 							print("\033[1;35mInsert the number of the tool to install it .\n\033[1;m")
 							option2 = input("\033[1;35mkat > \033[1;m")
 							if option2 == "1":
-								cmd = os.system("apt install cryptcat")
+								os.system("apt install cryptcat")
 							elif option2 == "2":
-								cmd = os.system("apt install ")
+								os.system("apt install ")
 							elif option2 == "3":
-								cmd = os.system("apt install dbd")
+								os.system("apt install dbd")
 							elif option2 == "4":
-								cmd = os.system("apt install dns2tcp")
+								os.system("apt install dns2tcp")
 							elif option2 == "5":
-								cmd = os.system("apt install ")
+								os.system("apt install ")
 							elif option2 == "6":
-								cmd = os.system("apt install httptunnel")
+								os.system("apt install httptunnel")
 							elif option2 == "7":
-								cmd = os.system("apt install ")
+								os.system("apt install ")
 							elif option2 == "8":
-								cmd = os.system("apt install nishang")
+								os.system("apt install nishang")
 							elif option2 == "9":
-								cmd = os.system("apt install polenum")
+								os.system("apt install polenum")
 							elif option2 == "10":
-								cmd = os.system("apt install powersploit")
+								os.system("apt install powersploit")
 							elif option2 == "11":
-								cmd = os.system("apt install pwnat")
+								os.system("apt install pwnat")
 							elif option2 == "12":
-								cmd = os.system("apt install ridenum")
+								os.system("apt install ridenum")
 							elif option2 == "13":
-								cmd = os.system("apt install sbd")
+								os.system("apt install sbd")
 							elif option2 == "14":
-								cmd = os.system("apt install ")
+								os.system("apt install ")
 							elif option2 == "15":
-								cmd = os.system("apt install webshells")
+								os.system("apt install webshells")
 							elif option2 == "16":
-								cmd = os.system("apt install weevely")
+								os.system("apt install weevely")
 							elif option2 == "back":
 								init()
 							elif option2 == "gohome":
 								init1()   
 							elif option2 == "0":
-								cmd = os.system("apt install -y cryptcat  dbd dns2tcp  httptunnel  nishang polenum powersploit pwnat ridenum sbd  webshells weevely")
+								os.system("apt install -y cryptcat  dbd dns2tcp  httptunnel  nishang polenum powersploit pwnat ridenum sbd  webshells weevely")
 							else:
 								print("\033[1;31mSorry, that was an invalid command!\033[1;m")
 						while option1 == "7":
@@ -750,29 +750,29 @@ def main():
 							print("\033[1;35mInsert the number of the tool to install it .\n\033[1;m")
 							option2 = input("\033[1;35mkat > \033[1;m")
 							if option2 == "1":
-								cmd = os.system("apt install casefile")
+								os.system("apt install casefile")
 							elif option2 == "2":
-								cmd = os.system("apt install cutycapt")
+								os.system("apt install cutycapt")
 							elif option2 == "3":
-								cmd = os.system("apt install dos2unix")
+								os.system("apt install dos2unix")
 							elif option2 == "4":
-								cmd = os.system("apt install ")
+								os.system("apt install ")
 							elif option2 == "5":
-								cmd = os.system("apt install ")
+								os.system("apt install ")
 							elif option2 == "6":
-								cmd = os.system("apt install ")
+								os.system("apt install ")
 							elif option2 == "7":
-								cmd = os.system("apt install metagoofil")
+								os.system("apt install metagoofil")
 							elif option2 == "8":
-								cmd = os.system("apt install nipper-ng")
+								os.system("apt install nipper-ng")
 							elif option2 == "9":
-								cmd = os.system("apt install pipal")
+								os.system("apt install pipal")
 							elif option2 == "back":
 								init()
 							elif option2 == "gohome":
 								init1()   
 							elif option2 == "0":
-								cmd = os.system("apt install -y casefile cutycapt dos2unix    metagoofil nipper-ng pipal")  
+								os.system("apt install -y casefile cutycapt dos2unix    metagoofil nipper-ng pipal")  
 							else:
 								print("\033[1;31mSorry, that was an invalid command!\033[1;m")
 
@@ -801,45 +801,45 @@ def main():
 							print("\033[1;35mInsert the number of the tool to install it .\n\033[1;m")
 							option2 = input("\033[1;35mkat > \033[1;m")
 							if option2 == "1":
-								cmd = os.system("apt install armitage")
+								os.system("apt install armitage")
 							elif option2 == "2":
-								cmd = os.system("apt install backdoor-factory")
+								os.system("apt install backdoor-factory")
 							elif option2 == "3":
-								cmd = os.system("apt install beef-xss")
+								os.system("apt install beef-xss")
 							elif option2 == "4":
-								cmd = os.system("apt install cisco-auditing-tool")
+								os.system("apt install cisco-auditing-tool")
 							elif option2 == "5":
-								cmd = os.system("apt install cisco-global-exploiter")
+								os.system("apt install cisco-global-exploiter")
 							elif option2 == "6":
-								cmd = os.system("apt install cisco-ocs")
+								os.system("apt install cisco-ocs")
 							elif option2 == "7":
-								cmd = os.system("apt install cisco-torch")
+								os.system("apt install cisco-torch")
 							elif option2 == "8":
-								cmd = os.system("apt install git && git clone https://github.com/stasinopoulos/commix.git commix && cd commix && python ./commix.py --install")
+								os.system("apt install git && git clone https://github.com/stasinopoulos/commix.git commix && cd commix && python ./commix.py --install")
 							elif option2 == "9":
-								cmd = os.system("apt install crackle")
+								os.system("apt install crackle")
 							elif option2 == "10":
-								cmd = os.system("apt install jboss-autopwn")
+								os.system("apt install jboss-autopwn")
 							elif option2 == "11":
-								cmd = os.system("apt install linux-exploit-suggester")
+								os.system("apt install linux-exploit-suggester")
 							elif option2 == "12":
-								cmd = os.system("apt install maltego-teeth")
+								os.system("apt install maltego-teeth")
 							elif option2 == "13":
-								cmd = os.system("apt install set")
+								os.system("apt install set")
 							elif option2 == "14":
-								cmd = os.system("apt install ")
+								os.system("apt install ")
 							elif option2 == "15":
-								cmd = os.system("apt install sqlmap")
+								os.system("apt install sqlmap")
 							elif option2 == "16":
-								cmd = os.system("apt install thc-ipv6")
+								os.system("apt install thc-ipv6")
 							elif option2 == "17":
-								cmd = os.system("apt install yersinia")
+								os.system("apt install yersinia")
 							elif option2 == "back":
 								init()
 							elif option2 == "gohome":
 								init1()   
 							elif option2 == "0":
-								cmd = os.system("apt install -y armitage backdoor-factory cisco-auditing-tool cisco-global-exploiter cisco-ocs cisco-torch crackle jboss-autopwn linux-exploit-suggester maltego-teeth set  sqlmap thc-ipv6 yersinia beef-xss")  						
+								os.system("apt install -y armitage backdoor-factory cisco-auditing-tool cisco-global-exploiter cisco-ocs cisco-torch crackle jboss-autopwn linux-exploit-suggester maltego-teeth set  sqlmap thc-ipv6 yersinia beef-xss")  						
 							else:
 								print("\033[1;31mSorry, that was an invalid command!\033[1;m")
 
@@ -864,57 +864,57 @@ def main():
 							print("\033[1;35mInsert the number of the tool to install it .\n\033[1;m")
 							option2 = input("\033[1;35mkat > \033[1;m")
 							if option2 == "1":
-								cmd = os.system("apt install binwalk")
+								os.system("apt install binwalk")
 							elif option2 == "2":
-								cmd = os.system("apt install bulk-extractor")
+								os.system("apt install bulk-extractor")
 							elif option2 == "3":
-								cmd = os.system("apt install git && git clone git://git.kali.org/packages/capstone.git")
+								os.system("apt install git && git clone git://git.kali.org/packages/capstone.git")
 							elif option2 == "4":
-								cmd = os.system("apt install chntpw")
+								os.system("apt install chntpw")
 							elif option2 == "5":
-								cmd = os.system("apt install ")
+								os.system("apt install ")
 							elif option2 == "6":
-								cmd = os.system("apt install dc3dd")
+								os.system("apt install dc3dd")
 							elif option2 == "7":
-								cmd = os.system("apt install ddrescue")
+								os.system("apt install ddrescue")
 							elif option2 == "8":
 								print('dff is unavailable')
 							elif option2 == "9":
-								cmd = os.system("apt install git && git clone git://git.kali.org/packages/distorm3.git")
+								os.system("apt install git && git clone git://git.kali.org/packages/distorm3.git")
 							elif option2 == "10":
-								cmd = os.system("apt install dumpzilla")
+								os.system("apt install dumpzilla")
 							elif option2 == "11":
-								cmd = os.system("apt install extundelete")
+								os.system("apt install extundelete")
 							elif option2 == "12":
-								cmd = os.system("apt install foremost")
+								os.system("apt install foremost")
 							elif option2 == "13":
-								cmd = os.system("apt install galleta")
+								os.system("apt install galleta")
 							elif option2 == "14":
-								cmd = os.system("apt install guymager")
+								os.system("apt install guymager")
 							elif option2 == "15":
-								cmd = os.system("apt install ")
+								os.system("apt install ")
 							elif option2 == "16":
-								cmd = os.system("apt install p0f")
+								os.system("apt install p0f")
 							elif option2 == "17":
-								cmd = os.system("apt install pdf-parser")
+								os.system("apt install pdf-parser")
 							elif option2 == "18":
-								cmd = os.system("apt install pdfid")
+								os.system("apt install pdfid")
 							elif option2 == "19":
-								cmd = os.system("apt install ")
+								os.system("apt install ")
 							elif option2 == "20":
-								cmd = os.system("apt install ")
+								os.system("apt install ")
 							elif option2 == "21":
 								print("Regripper is unavailable")
 							elif option2 == "22":
-								cmd = os.system("apt install ")
+								os.system("apt install ")
 							elif option2 == "23":
-								cmd = os.system("apt install ")
+								os.system("apt install ")
 							elif option2 == "back":
 								init()
 							elif option2 == "gohome":
 								init1()   
 							elif option2 == "0":
-								cmd = os.system("apt install -y binwalk bulk-extractor chntpw  dc3dd ddrescue dumpzilla extundelete foremost galleta guymager  p0f pdf-parser pdfid    ")						
+								os.system("apt install -y binwalk bulk-extractor chntpw  dc3dd ddrescue dumpzilla extundelete foremost galleta guymager  p0f pdf-parser pdfid    ")						
 							else:
 								print("\033[1;31mSorry, that was an invalid command!\033[1;m")
 						while option1 == "10":
@@ -939,39 +939,39 @@ def main():
 							print("\033[1;35mInsert the number of the tool to install it .\n\033[1;m")
 							option2 = input("\033[1;35mkat > \033[1;m")
 							if option2 == "1":
-								cmd = os.system("apt install dhcpig")
+								os.system("apt install dhcpig")
 							elif option2 == "2":
-								cmd = os.system("apt install ")
+								os.system("apt install ")
 							elif option2 == "3":
-								cmd = os.system("apt install iaxflood")
+								os.system("apt install iaxflood")
 							elif option2 == "4":
-								cmd = os.system("apt install git && git clone git://git.kali.org/packages/inundator.git")
+								os.system("apt install git && git clone git://git.kali.org/packages/inundator.git")
 							elif option2 == "5":
-								cmd = os.system("apt install inviteflood")
+								os.system("apt install inviteflood")
 							elif option2 == "6":
-								cmd = os.system("apt install ipv6-toolkit")
+								os.system("apt install ipv6-toolkit")
 							elif option2 == "7":
-								cmd = os.system("apt install mdk3")
+								os.system("apt install mdk3")
 							elif option2 == "8":
-								cmd = os.system("apt install reaver")
+								os.system("apt install reaver")
 							elif option2 == "9":
-								cmd = os.system("apt install rtpflood")
+								os.system("apt install rtpflood")
 							elif option2 == "10":
-								cmd = os.system("apt install slowhttptest")
+								os.system("apt install slowhttptest")
 							elif option2 == "11":
-								cmd = os.system("apt install t50")
+								os.system("apt install t50")
 							elif option2 == "12":
-								cmd = os.system("apt install termineter")
+								os.system("apt install termineter")
 							elif option2 == "13":
-								cmd = os.system("apt install thc-ipv6")
+								os.system("apt install thc-ipv6")
 							elif option2 == "14":
-								cmd = os.system("apt install thc-ssl-dos ")    				             										
+								os.system("apt install thc-ssl-dos ")    				             										
 							elif option2 == "back":
 								init()
 							elif option2 == "gohome":
 								init1()   
 							elif option2 == "0":
-								cmd = os.system("apt install -y dhcpig  iaxflood inviteflood ipv6-toolkit mdk3 reaver rtpflood slowhttptest t50 termineter thc-ipv6 thc-ssl-dos")
+								os.system("apt install -y dhcpig  iaxflood inviteflood ipv6-toolkit mdk3 reaver rtpflood slowhttptest t50 termineter thc-ipv6 thc-ssl-dos")
 							else:
 								print("\033[1;31mSorry, that was an invalid command!\033[1;m")
 						while option1 == "11":
@@ -1000,81 +1000,81 @@ def main():
 							print("\033[1;35mInsert the number of the tool to install it .\n\033[1;m")
 							option2 = input("\033[1;35mkat > \033[1;m")
 							if option2 == "2":
-								cmd = os.system("apt install burpsuite")
+								os.system("apt install burpsuite")
 							elif option2 == "3":
-								cmd = os.system("apt install cewl")
+								os.system("apt install cewl")
 							elif option2 == "4":
-								cmd = os.system("apt install chntpw")
+								os.system("apt install chntpw")
 							elif option2 == "5":
-								cmd = os.system("apt install cisco-auditing-tool")
+								os.system("apt install cisco-auditing-tool")
 							elif option2 == "6":
-								cmd = os.system("apt install ")
+								os.system("apt install ")
 							elif option2 == "7":
-								cmd = os.system("apt install ")
+								os.system("apt install ")
 							elif option2 == "8":
-								cmd = os.system("apt install crunch")
+								os.system("apt install crunch")
 							elif option2 == "9":
-								cmd = os.system("apt install git && git clone git://git.kali.org/packages/dbpwaudit.git")
+								os.system("apt install git && git clone git://git.kali.org/packages/dbpwaudit.git")
 							elif option2 == "10":
-								cmd = os.system("apt install ")
+								os.system("apt install ")
 							elif option2 == "11":
-								cmd = os.system("apt install gpp-decrypt")
+								os.system("apt install gpp-decrypt")
 							elif option2 == "12":
-								cmd = os.system("apt install hash-identifier")
+								os.system("apt install hash-identifier")
 							elif option2 == "13":
-								cmd = os.system("apt install ")
+								os.system("apt install ")
 							elif option2 == "14":
-								cmd = os.system("echo 'please visit : https://www.thc.org/thc-hydra/' ")
+								os.system("echo 'please visit : https://www.thc.org/thc-hydra/' ")
 							elif option2 == "15":
-								cmd = os.system("apt install john")
+								os.system("apt install john")
 							elif option2 == "16":
-								cmd = os.system("apt install johnny")
+								os.system("apt install johnny")
 							elif option2 == "17":
-								cmd = os.system("apt install ")
+								os.system("apt install ")
 							elif option2 == "18":
-								cmd = os.system("apt install maltego-teeth")
+								os.system("apt install maltego-teeth")
 							elif option2 == "19":
-								cmd = os.system("apt install maskprocessor")
+								os.system("apt install maskprocessor")
 							elif option2 == "20":
-								cmd = os.system("apt install ")
+								os.system("apt install ")
 							elif option2 == "21":
-								cmd = os.system("apt install ncrack")
+								os.system("apt install ncrack")
 							elif option2 == "22":
-								cmd = os.system("apt install ")
+								os.system("apt install ")
 							elif option2 == "23":
-								cmd = os.system("apt install pack")
+								os.system("apt install pack")
 							elif option2 == "24":
-								cmd = os.system("apt install patator")
+								os.system("apt install patator")
 							elif option2 == "25":
-								cmd = os.system("echo 'please visit : http://www.leidecker.info/projects/phrasendrescher/index.shtml' ")
+								os.system("echo 'please visit : http://www.leidecker.info/projects/phrasendrescher/index.shtml' ")
 							elif option2 == "26":
-								cmd = os.system("apt install polenum")
+								os.system("apt install polenum")
 							elif option2 == "27":
-								cmd = os.system("apt install ")
+								os.system("apt install ")
 							elif option2 == "28":
-								cmd = os.system("apt install rcracki-mt")
+								os.system("apt install rcracki-mt")
 							elif option2 == "29":
-								cmd = os.system("apt install rsmangler")
+								os.system("apt install rsmangler")
 							elif option2 == "30":
 								print("Sqldict is unavailable")
 							elif option2 == "31":
-								cmd = os.system("apt install statsprocessor")
+								os.system("apt install statsprocessor")
 							elif option2 == "32":
-								cmd = os.system("apt install thc-pptp-bruter")
+								os.system("apt install thc-pptp-bruter")
 							elif option2 == "33":
-								cmd = os.system("apt install truecrack")
+								os.system("apt install truecrack")
 							elif option2 == "34":
-								cmd = os.system("apt install webscarab")
+								os.system("apt install webscarab")
 							elif option2 == "35":
-								cmd = os.system("apt install wordlists")
+								os.system("apt install wordlists")
 							elif option2 == "36":
-								cmd = os.system("apt install zaproxy")
+								os.system("apt install zaproxy")
 							elif option2 == "back":
 								init()
 							elif option2 == "gohome":
 								init1()   
 							elif option2 == "0":
-								cmd = os.system("apt install -y  burpsuite cewl chntpw cisco-auditing-tool   crunch  gpp-decrypt hash-identifier  john johnny  maltego-teeth maskprocessor  ncrack  pack patator polenum  rcracki-mt rsmangler statsprocessor thc-pptp-bruter truecrack webscarab wordlists zaproxy")
+								os.system("apt install -y  burpsuite cewl chntpw cisco-auditing-tool   crunch  gpp-decrypt hash-identifier  john johnny  maltego-teeth maskprocessor  ncrack  pack patator polenum  rcracki-mt rsmangler statsprocessor thc-pptp-bruter truecrack webscarab wordlists zaproxy")
 							else:
 								print("\033[1;31mSorry, that was an invalid command!\033[1;m")
 						while option1 == "12" :
@@ -1096,33 +1096,33 @@ def main():
 							print("\033[1;35mInsert the number of the tool to install it .\n\033[1;m")
 							option2 = input("\033[1;35mkat > \033[1;m")
 							if option2 == "1":
-								cmd = os.system("apt install apktool")
+								os.system("apt install apktool")
 							elif option2 == "2":
-								cmd = os.system("apt install dex2jar")
+								os.system("apt install dex2jar")
 							elif option2 == "3":
-								cmd = os.system("apt install python-diStorm3")
+								os.system("apt install python-diStorm3")
 							elif option2 == "4":
-								cmd = os.system("apt install ")
+								os.system("apt install ")
 							elif option2 == "5":
-								cmd = os.system("apt install ")
+								os.system("apt install ")
 							elif option2 == "6":
-								cmd = os.system("apt install javasnoop")
+								os.system("apt install javasnoop")
 							elif option2 == "7":
-								cmd = os.system("apt install jdim")
+								os.system("apt install jdim")
 							elif option2 == "8":
-								cmd = os.system("apt install OllyDbg")
+								os.system("apt install OllyDbg")
 							elif option2 == "9":
-								cmd = os.system("apt install smali")
+								os.system("apt install smali")
 							elif option2 == "10":
-								cmd = os.system("apt install Valgrind")
+								os.system("apt install Valgrind")
 							elif option2 == "11":
-								cmd = os.system("apt install YARA")
+								os.system("apt install YARA")
 							elif option2 == "back":
 								init()
 							elif option2 == "gohome":
 								init1()   
 							elif option2 == "0":
-								cmd = os.system("apt install -y apktool dex2jar python-diStorm3   javasnoop jdim OllyDbg smali Valgrind YARA")
+								os.system("apt install -y apktool dex2jar python-diStorm3   javasnoop jdim OllyDbg smali Valgrind YARA")
 							else:
 								print("\033[1;31mSorry, that was an invalid command!\033[1;m")
 						while option1 == "13" :
@@ -1139,24 +1139,24 @@ def main():
 							print("\033[1;35mInsert the number of the tool to install it .\n\033[1;m")
 							option2 = input("\033[1;35mkat > \033[1;m")
 							if option2 == "1":
-								cmd = os.system("apt install android-sdk")
+								os.system("apt install android-sdk")
 							elif option2 == "2":
-								cmd = os.system("apt install apktool")
+								os.system("apt install apktool")
 							elif option2 == "3":
-								cmd = os.system("apt install ")
+								os.system("apt install ")
 							elif option2 == "4":
-								cmd = os.system("apt install dex2jar")
+								os.system("apt install dex2jar")
 							elif option2 == "5":
-								cmd = os.system("apt install sakis3g")
+								os.system("apt install sakis3g")
 							elif option2 == "6":
-								cmd = os.system("apt install smali")
+								os.system("apt install smali")
 
 							elif option2 == "back":
 								init()
 							elif option2 == "gohome":
 								init1()   
 							elif option2 == "0":
-								cmd = os.system("apt install -y android-sdk apktool  dex2jar sakis3g smali")
+								os.system("apt install -y android-sdk apktool  dex2jar sakis3g smali")
 							else:
 								print("\033[1;31mSorry, that was an invalid command!\033[1;m")
 						while option1 == "14" :
@@ -1168,10 +1168,10 @@ def main():
 							print("\033[1;35mInsert the number of the tool to install it .\n\033[1;m")
 							option2 = input("\033[1;35mkat > \033[1;m")
 							if option2 == "1":
-								cmd = os.system("git clone https://github.com/LionSec/wifresti.git && cp wifresti/wifresti.py /usr/bin/wifresti && chmod +x /usr/bin/wifresti && wifresti")
+								os.system("git clone https://github.com/LionSec/wifresti.git && cp wifresti/wifresti.py /usr/bin/wifresti && chmod +x /usr/bin/wifresti && wifresti")
 								print(" ")
 							elif option2 == "2":
-								cmd = os.system("apt install squid3")
+								os.system("apt install squid3")
 								print(" ")
 							elif option2 == "back":
 								init()
